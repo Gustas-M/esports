@@ -1,0 +1,16 @@
+C:\Users\gusta\Desktop\esports\bin\Debug\esports.deps.json
+C:\Users\gusta\Desktop\esports\bin\Debug\esports.runtimeconfig.json
+C:\Users\gusta\Desktop\esports\bin\Debug\appsettings.Development.json
+C:\Users\gusta\Desktop\esports\bin\Debug\appsettings.json
+C:\Users\gusta\Desktop\esports\bin\Debug\esports.staticwebassets.runtime.json
+C:\Users\gusta\Desktop\esports\bin\Debug\esports.exe
+C:\Users\gusta\Desktop\esports\bin\Debug\esports.dll
+C:\Users\gusta\Desktop\esports\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\gusta\Desktop\esports\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gusta\Desktop\esports\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\gusta\Desktop\esports\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gusta\Desktop\esports\bin\Debug\Npgsql.dll
+C:\Users\gusta\Desktop\esports\bin\Debug\esports.pdb
+C:\Users\gusta\Desktop\esports\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\gusta\Desktop\esports\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\gusta\Desktop\esports\obj\Debug\docker-c.35A3FFBA.Up2Date
