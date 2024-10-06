@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\gusta\\Desktop\\esports\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|solutionrelative:esports\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3752FC4A-19CB-43E4-BE77-022CA8E2DB1F}|docker-compose.dcproj|c:\\users\\gusta\\desktop\\esports\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3752FC4A-19CB-43E4-BE77-022CA8E2DB1F}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\views\\championships\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|solutionrelative:esports\\views\\championships\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|solutionrelative:esports\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ChampionshipsController.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Controllers\\ChampionshipsController.cs",
               "RelativeDocumentMoniker": "esports\\Controllers\\ChampionshipsController.cs",
@@ -86,8 +86,7 @@
               "RelativeToolTip": "esports\\Controllers\\ChampionshipsController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T21:10:03.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T21:10:03.713Z"
             },
             {
               "$type": "Document",
@@ -99,8 +98,7 @@
               "RelativeToolTip": "esports\\Views\\Championships\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-04T21:12:47.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T21:12:47.516Z"
             },
             {
               "$type": "Document",
@@ -112,18 +110,17 @@
               "RelativeToolTip": "esports\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-04T21:10:31.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T21:10:31.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Program.cs",
               "RelativeDocumentMoniker": "esports\\Program.cs",
               "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Program.cs",
               "RelativeToolTip": "esports\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAASwCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAASwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T19:58:45.041Z",
               "EditorCaption": ""
@@ -138,18 +135,17 @@
               "RelativeToolTip": "esports\\Data\\Migrations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T21:33:38.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T21:33:38.529Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2024-10-04T19:58:11.616Z",
               "EditorCaption": ""
@@ -164,8 +160,7 @@
               "RelativeToolTip": "esports\\Migrations\\EsportsContextModelSnapshot.cs",
               "ViewState": "AgIAAGoAAAAAAAAAAAAgwA4AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T21:29:22.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T21:29:22.355Z"
             },
             {
               "$type": "Document",
@@ -177,12 +172,11 @@
               "RelativeToolTip": "esports\\Data\\EsportsContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T20:19:48.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T20:19:48.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Views\\Championships\\Details.cshtml",
               "RelativeDocumentMoniker": "esports\\Views\\Championships\\Details.cshtml",
@@ -190,8 +184,7 @@
               "RelativeToolTip": "esports\\Views\\Championships\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-04T21:44:08.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T21:44:08.232Z"
             },
             {
               "$type": "Document",
@@ -203,8 +196,7 @@
               "RelativeToolTip": "esports\\Models\\Championship.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T20:00:31.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T20:00:31.186Z"
             },
             {
               "$type": "Document",
@@ -216,8 +208,7 @@
               "RelativeToolTip": "esports\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T21:11:59.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T21:11:59.963Z"
             },
             {
               "$type": "Document",
@@ -229,8 +220,7 @@
               "RelativeToolTip": "esports\\Models\\Tournament.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T20:00:43.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T20:00:43.393Z"
             },
             {
               "$type": "Document",
@@ -242,8 +232,7 @@
               "RelativeToolTip": "esports\\Models\\Match.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T20:01:02.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T20:01:02.031Z"
             },
             {
               "$type": "Document",
@@ -255,21 +244,19 @@
               "RelativeToolTip": "launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-04T19:58:39.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:58:39.778Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "docker-compose",
+              "Title": "docker-compose.dcproj",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\docker-compose.dcproj",
               "RelativeDocumentMoniker": "docker-compose.dcproj",
               "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\docker-compose.dcproj",
               "RelativeToolTip": "docker-compose.dcproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-04T19:58:09.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:58:09.328Z"
             }
           ]
         }

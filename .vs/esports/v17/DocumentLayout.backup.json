@@ -70,46 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Views\\Championships\\Details.cshtml",
-              "RelativeDocumentMoniker": "esports\\Views\\Championships\\Details.cshtml",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Views\\Championships\\Details.cshtml",
-              "RelativeToolTip": "esports\\Views\\Championships\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-04T21:44:08.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EsportsContext.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Data\\EsportsContext.cs",
-              "RelativeDocumentMoniker": "esports\\Data\\EsportsContext.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Data\\EsportsContext.cs",
-              "RelativeToolTip": "esports\\Data\\EsportsContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T20:19:48.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EsportsContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Migrations\\EsportsContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "esports\\Migrations\\EsportsContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Migrations\\EsportsContextModelSnapshot.cs",
-              "RelativeToolTip": "esports\\Migrations\\EsportsContextModelSnapshot.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAgwA4AAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T21:29:22.355Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -178,19 +143,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Championship.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Models\\Championship.cs",
-              "RelativeDocumentMoniker": "esports\\Models\\Championship.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Models\\Championship.cs",
-              "RelativeToolTip": "esports\\Models\\Championship.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T20:00:31.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\docker-compose.yml",
@@ -203,8 +155,56 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EsportsContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Migrations\\EsportsContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "esports\\Migrations\\EsportsContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Migrations\\EsportsContextModelSnapshot.cs",
+              "RelativeToolTip": "esports\\Migrations\\EsportsContextModelSnapshot.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAgwA4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T21:29:22.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EsportsContext.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Data\\EsportsContext.cs",
+              "RelativeDocumentMoniker": "esports\\Data\\EsportsContext.cs",
+              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Data\\EsportsContext.cs",
+              "RelativeToolTip": "esports\\Data\\EsportsContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:19:48.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Views\\Championships\\Details.cshtml",
+              "RelativeDocumentMoniker": "esports\\Views\\Championships\\Details.cshtml",
+              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Views\\Championships\\Details.cshtml",
+              "RelativeToolTip": "esports\\Views\\Championships\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T21:44:08.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Championship.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Models\\Championship.cs",
+              "RelativeDocumentMoniker": "esports\\Models\\Championship.cs",
+              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\Models\\Championship.cs",
+              "RelativeToolTip": "esports\\Models\\Championship.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:00:31.186Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -229,3 +229,4 @@ C:\Users\gusta\Desktop\esports\esports\obj\Debug\net8.0\refint\esports.dll
 C:\Users\gusta\Desktop\esports\esports\obj\Debug\net8.0\esports.pdb
 C:\Users\gusta\Desktop\esports\esports\obj\Debug\net8.0\esports.genruntimeconfig.cache
 C:\Users\gusta\Desktop\esports\esports\obj\Debug\net8.0\ref\esports.dll
+C:\Users\gusta\Desktop\esports\esports\obj\Debug\net8.0\esports.sourcelink.json
