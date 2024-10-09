@@ -14,5 +14,6 @@ namespace esports.Data
         public DbSet<Models.Championship> Championships { get; set; }
         public DbSet<Models.Tournament> Tournaments { get; set; }
         public DbSet<Models.Match> Matches { get; set; }
+        public DbSet<Models.Team> Teams { get; set; }
     }
 }

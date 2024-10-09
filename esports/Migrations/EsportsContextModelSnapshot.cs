@@ -62,6 +62,22 @@ namespace esports.Migrations
                     b.ToTable("Matches");
                 });
 
+            modelBuilder.Entity("esports.Models.Team", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Teams");
+                });
+
             modelBuilder.Entity("esports.Models.Tournament", b =>
                 {
                     b.Property<int>("Id")
@@ -76,6 +92,9 @@ namespace esports.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("Number_of_rounds")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
