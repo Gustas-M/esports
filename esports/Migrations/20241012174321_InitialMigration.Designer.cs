@@ -11,7 +11,7 @@ using esports.Data;
 namespace esports.Migrations
 {
     [DbContext(typeof(EsportsContext))]
-    [Migration("20241011152828_InitialMigration")]
+    [Migration("20241012174321_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />

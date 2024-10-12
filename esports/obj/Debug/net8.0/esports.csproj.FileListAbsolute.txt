@@ -468,3 +468,9 @@ C:\Users\Gustas\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.Exten
 C:\Users\Gustas\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\Gustas\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Gustas\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\gusta\Desktop\esports\esports\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gusta\Desktop\esports\esports\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gusta\Desktop\esports\esports\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gusta\Desktop\esports\esports\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\gusta\Desktop\esports\esports\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gusta\Desktop\esports\esports\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
