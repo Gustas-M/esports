@@ -10,6 +10,7 @@ using esports.Models;
 
 namespace esports.Controllers
 {
+    [Route("Championships")]
     public class ChampionshipsController : Controller
     {
         private readonly EsportsContext _context;
@@ -20,12 +21,16 @@ namespace esports.Controllers
         }
 
         // GET: Championships
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Championships.ToListAsync());
+            return Ok(await _context.Championships.ToListAsync());
+            //return View(await _context.Championships.ToListAsync());
         }
 
         // GET: Championships/Details/5
+
+        [HttpGet("{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -40,51 +45,54 @@ namespace esports.Controllers
                 return NotFound();
             }
 
-            return View(championship);
+            return Ok(championship);
+            //return View(championship);
         }
 
         // GET: Championships/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+        //public IActionResult Create()
+        //{
+        //    return View();
+        //}
 
         // POST: Championships/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Year")] Championship championship)
+        //[ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([FromBody] Championship championship)
         {
             if (ModelState.IsValid)
-            {
+            {                
                 _context.Add(championship);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return CreatedAtAction("POST", new { id = championship.Id }, championship);
+                //return RedirectToAction(nameof(Index));
             }
-            return View(championship);
+                       
+            return BadRequest();
         }
 
         // GET: Championships/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        //public async Task<IActionResult> Edit(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var championship = await _context.Championships.FindAsync(id);
-            if (championship == null)
-            {
-                return NotFound();
-            }
-            return View(championship);
-        }
+        //    var championship = await _context.Championships.FindAsync(id);
+        //    if (championship == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(championship);
+        //}
 
         // POST: Championships/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPut("{id}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Year")] Championship championship)
         {
@@ -117,6 +125,7 @@ namespace esports.Controllers
         }
 
         // GET: Championships/Delete/5
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -131,23 +140,28 @@ namespace esports.Controllers
                 return NotFound();
             }
 
-            return View(championship);
+
+            _context.Championships.Remove(championship);     
+
+            await _context.SaveChangesAsync();
+            return Ok(championship);
+            //return View(championship);
         }
 
         // POST: Championships/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var championship = await _context.Championships.FindAsync(id);
-            if (championship != null)
-            {
-                _context.Championships.Remove(championship);
-            }
+        //[HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> DeleteConfirmed(int id)
+        //{
+        //    var championship = await _context.Championships.FindAsync(id);
+        //    if (championship != null)
+        //    {
+        //        _context.Championships.Remove(championship);
+        //    }
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+        //    await _context.SaveChangesAsync();
+        //    return RedirectToAction(nameof(Index));
+        //}
 
         private bool ChampionshipExists(int id)
         {

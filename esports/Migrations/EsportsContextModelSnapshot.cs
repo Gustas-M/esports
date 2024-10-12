@@ -16,7 +16,7 @@ namespace esports.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.8")
+                .HasAnnotation("ProductVersion", "8.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -49,6 +49,18 @@ namespace esports.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("First_Teamid")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Match_In_Round_Number")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Round_Number")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Second_Teamid")
+                        .HasColumnType("integer");
+
                     b.Property<int>("TournamentId")
                         .HasColumnType("integer");
 
@@ -56,6 +68,10 @@ namespace esports.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("First_Teamid");
+
+                    b.HasIndex("Second_Teamid");
 
                     b.HasIndex("TournamentId");
 
@@ -105,11 +121,27 @@ namespace esports.Migrations
 
             modelBuilder.Entity("esports.Models.Match", b =>
                 {
+                    b.HasOne("esports.Models.Team", "First_Team")
+                        .WithMany()
+                        .HasForeignKey("First_Teamid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("esports.Models.Team", "Second_Team")
+                        .WithMany()
+                        .HasForeignKey("Second_Teamid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("esports.Models.Tournament", "Tournament")
-                        .WithMany("Matches")
+                        .WithMany()
                         .HasForeignKey("TournamentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("First_Team");
+
+                    b.Navigation("Second_Team");
 
                     b.Navigation("Tournament");
                 });
@@ -117,22 +149,12 @@ namespace esports.Migrations
             modelBuilder.Entity("esports.Models.Tournament", b =>
                 {
                     b.HasOne("esports.Models.Championship", "Championship")
-                        .WithMany("Tournaments")
+                        .WithMany()
                         .HasForeignKey("ChampionshipId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Championship");
-                });
-
-            modelBuilder.Entity("esports.Models.Championship", b =>
-                {
-                    b.Navigation("Tournaments");
-                });
-
-            modelBuilder.Entity("esports.Models.Tournament", b =>
-                {
-                    b.Navigation("Matches");
                 });
 #pragma warning restore 612, 618
         }
