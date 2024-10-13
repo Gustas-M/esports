@@ -20,7 +20,6 @@ namespace esports.Controllers
             _context = context;
         }
 
-        // GET: Tournaments
         [HttpGet]
         public async Task<IActionResult> Index(int championshipId)
         {
@@ -29,7 +28,6 @@ namespace esports.Controllers
             return Ok(await esportsContext);
         }
 
-        // GET: Tournaments/Details/5
         [HttpGet("{id}")]
         public async Task<IActionResult> Details(int championshipId, int? id)
         {
@@ -64,55 +62,57 @@ namespace esports.Controllers
                 return NotFound();
             }
 
-            tournament.ChampionshipId = championshipId;
-            tournament.Championship = champ;
 
-            if (tournament.IsValid())
+
+            ModelState.Remove(nameof(tournament.Championship));
+
+            if (ModelState.IsValid)
             {
-                _context.Tournaments.Add(tournament);
-                await _context.SaveChangesAsync();
+                tournament.ChampionshipId = championshipId;
+                tournament.Championship = champ;
+                if (tournament.IsValid())
+                {
+                    _context.Tournaments.Add(tournament);
+                    await _context.SaveChangesAsync();
+                    return CreatedAtAction(nameof(Details), new { id = tournament.Id }, tournament);
+                }
 
-                return CreatedAtAction(nameof(Details), new { id = tournament.Id }, tournament);
+                return UnprocessableEntity();
             }
 
             return BadRequest(ModelState);
         }
 
-        // GET: Tournaments/Edit/5
-        //[HttpPut]
-        //public async Task<IActionResult> Edit(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
 
-        //    var tournament = await _context.Tournaments.FindAsync(id);
-        //    if (tournament == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    ViewData["ChampionshipId"] = new SelectList(_context.Championships, "Id", "Id", tournament.ChampionshipId);
-        //    return View(tournament);
-        //}
-
-        // POST: Tournaments/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPut("{id}")]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Number_of_rounds,ChampionshipId")] Tournament tournament)
+        public async Task<IActionResult> Edit(int championshipId, int id, [FromBody] Tournament tournament)
         {
-            if (id != tournament.Id)
-            {
-                return NotFound();
-            }
-
+            ModelState.Remove(nameof(tournament.Championship));
             if (ModelState.IsValid)
             {
+                if (id != tournament.Id)
+                {
+                    return NotFound();
+                }
+
+                var champ = await _context.Championships.FindAsync(tournament.ChampionshipId);
+
+
+
                 try
                 {
-                    _context.Update(tournament);
-                    await _context.SaveChangesAsync();
+                    tournament.Championship = champ;
+                    tournament.ChampionshipId = championshipId;
+
+                    if (tournament.IsValid())
+                    {
+                        _context.Update(tournament);
+                        await _context.SaveChangesAsync();
+                        return Ok(tournament);
+                    }
+
+                    return UnprocessableEntity();
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -125,46 +125,33 @@ namespace esports.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
             }
-            ViewData["ChampionshipId"] = new SelectList(_context.Championships, "Id", "Id", tournament.ChampionshipId);
-            return View(tournament);
+
+            return BadRequest();
         }
 
-        //// GET: Tournaments/Delete/5
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> Delete(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
-        //    var tournament = await _context.Tournaments
-        //        .Include(t => t.Championship)
-        //        .FirstOrDefaultAsync(m => m.Id == id);
-        //    if (tournament == null)
-        //    {
-        //        return NotFound();
-        //    }
+            var tournament = await _context.Tournaments
+                .Include(t => t.Championship)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (tournament == null)
+            {
+                return NotFound();
+            }
 
-        //    return View(tournament);
-        //}
+            _context.Tournaments.Remove(tournament);
+            await _context.SaveChangesAsync();
 
-        //// POST: Tournaments/Delete/5
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> DeleteConfirmed(int id)
-        //{
-        //    var tournament = await _context.Tournaments.FindAsync(id);
-        //    if (tournament != null)
-        //    {
-        //        _context.Tournaments.Remove(tournament);
-        //    }
+            return NoContent();
+        }
 
-        //    await _context.SaveChangesAsync();
-        //    return RedirectToAction(nameof(Index));
-        //}
 
         private bool TournamentExists(int id)
         {
