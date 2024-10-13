@@ -19,10 +19,16 @@
                 @Html.DisplayNameFor(model => model.Match_In_Round_Number)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Tournament)
+                @Html.DisplayNameFor(model => model.FirstTeamId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.WinningTeam)
+                @Html.DisplayNameFor(model => model.SecondTeamId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WinningTeamId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tournament)
             </th>
             <th></th>
         </tr>
@@ -37,10 +43,16 @@
                 @Html.DisplayFor(modelItem => item.Match_In_Round_Number)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Tournament.Id)
+                @Html.DisplayFor(modelItem => item.FirstTeamId)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.WinningTeam)
+                @Html.DisplayFor(modelItem => item.SecondTeamId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WinningTeamId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tournament.Id)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

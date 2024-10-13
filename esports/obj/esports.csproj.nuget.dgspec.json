@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports.csproj": {}
+    "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\esports.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports.csproj": {
+    "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\esports.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports.csproj",
+        "projectUniqueName": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\esports.csproj",
         "projectName": "esports",
-        "projectPath": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports.csproj",
-        "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gusta\\Desktop\\esports\\esports\\obj\\",
+        "projectPath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\esports.csproj",
+        "packagesPath": "C:\\Users\\Gustas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gustas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,6 +64,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.6.22, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.21.0, )"
@@ -71,6 +79,22 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             }
           },
           "imports": [

@@ -7,10 +7,14 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using esports.Data;
 using esports.Models;
+using System.Net.Mime;
 
 namespace esports.Controllers
 {
     [Route("Championships")]
+    [Produces(MediaTypeNames.Application.Json)]
+    [Consumes(MediaTypeNames.Application.Json)]
+    //[ApiController]
     public class ChampionshipsController : Controller
     {
         private readonly EsportsContext _context;
@@ -21,15 +25,26 @@ namespace esports.Controllers
         }
 
         // GET: Championships
+        /// <summary>
+        /// Returns a list of all championships
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> Index()
         {
             return Ok(await _context.Championships.ToListAsync());
         }
 
         // GET: Championships/Details/5
-
+        /// <summary>
+        /// Returns a specific championship
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -47,7 +62,15 @@ namespace esports.Controllers
             return Ok(championship);
         }
 
+        /// <summary>
+        /// Creates a new championship with specified parameters
+        /// </summary>
+        /// <param name="championship"></param>
+        /// <returns></returns>
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
         public async Task<IActionResult> Create([FromBody] Championship championship)
         {
             if (ModelState.IsValid)
@@ -66,14 +89,23 @@ namespace esports.Controllers
             return BadRequest();
         }
 
-
+        /// <summary>
+        /// Edits a championship with specified parameters
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="championship"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
         public async Task<IActionResult> Edit(int id, [FromBody] Championship championship)
         {
-            if (id != championship.Id)
-            {
-                return NotFound();
-            }
+            //if (id != championship.Id)
+            //{
+            //    return NotFound();
+            //}
 
             if (ModelState.IsValid)
             {
@@ -103,7 +135,14 @@ namespace esports.Controllers
             return BadRequest(championship);
         }
 
+        /// <summary>
+        /// Deletes a championship with specified ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -122,7 +161,7 @@ namespace esports.Controllers
             _context.Championships.Remove(championship);     
 
             await _context.SaveChangesAsync();
-            return Ok(championship);
+            return NoContent();
         }
 
 

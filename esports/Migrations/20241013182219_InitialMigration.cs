@@ -67,26 +67,14 @@ namespace esports.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Round_Number = table.Column<int>(type: "integer", nullable: false),
                     Match_In_Round_Number = table.Column<int>(type: "integer", nullable: false),
-                    First_Teamid = table.Column<int>(type: "integer", nullable: false),
-                    Second_Teamid = table.Column<int>(type: "integer", nullable: false),
+                    FirstTeamId = table.Column<int>(type: "integer", nullable: true),
+                    SecondTeamId = table.Column<int>(type: "integer", nullable: true),
                     TournamentId = table.Column<int>(type: "integer", nullable: false),
-                    WinningTeam = table.Column<string>(type: "text", nullable: true)
+                    WinningTeamId = table.Column<int>(type: "integer", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Matches", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Matches_Teams_First_Teamid",
-                        column: x => x.First_Teamid,
-                        principalTable: "Teams",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Matches_Teams_Second_Teamid",
-                        column: x => x.Second_Teamid,
-                        principalTable: "Teams",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Matches_Tournaments_TournamentId",
                         column: x => x.TournamentId,
@@ -94,16 +82,6 @@ namespace esports.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Matches_First_Teamid",
-                table: "Matches",
-                column: "First_Teamid");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Matches_Second_Teamid",
-                table: "Matches",
-                column: "Second_Teamid");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Matches_TournamentId",

@@ -7,10 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using esports.Data;
 using esports.Models;
+using System.Net.Mime;
 
 namespace esports.Controllers
 {
     [Route("Championships/{championshipId}/Tournaments")]
+    [Produces(MediaTypeNames.Application.Json)]
+    [Consumes(MediaTypeNames.Application.Json)]
     public class TournamentsController : Controller
     {
         private readonly EsportsContext _context;
@@ -20,7 +23,13 @@ namespace esports.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Returns a list of all tournaments for a specific championship
+        /// </summary>
+        /// <param name="championshipId"></param>
+        /// <returns></returns>
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> Index(int championshipId)
         {
             var esportsContext = _context.Tournaments.Where(t => t.ChampionshipId == championshipId).Include(t => t.Championship).ToListAsync();
@@ -28,7 +37,15 @@ namespace esports.Controllers
             return Ok(await esportsContext);
         }
 
+        /// <summary>
+        /// Returns a specific tournament for a specific championship
+        /// </summary>
+        /// <param name="championshipId"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Details(int championshipId, int? id)
         {
             if (id == null)
@@ -53,7 +70,17 @@ namespace esports.Controllers
             return Ok(tournament);
         }
 
+        /// <summary>
+        /// Creates a new tournament for a specific championship
+        /// </summary>
+        /// <param name="championshipId"></param>
+        /// <param name="tournament"></param>
+        /// <returns></returns>
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
         public async Task<IActionResult> Create(int championshipId, [FromBody] Tournament tournament)
         {
             var champ = await _context.Championships.FindAsync(championshipId);
@@ -83,8 +110,18 @@ namespace esports.Controllers
             return BadRequest(ModelState);
         }
 
-
+        /// <summary>
+        /// Edits a specific tournament for a specific championship
+        /// </summary>
+        /// <param name="championshipId"></param>
+        /// <param name="id"></param>
+        /// <param name="tournament"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
         public async Task<IActionResult> Edit(int championshipId, int id, [FromBody] Tournament tournament)
         {
             ModelState.Remove(nameof(tournament.Championship));
@@ -95,7 +132,7 @@ namespace esports.Controllers
                     return NotFound();
                 }
 
-                var champ = await _context.Championships.FindAsync(tournament.ChampionshipId);
+                var champ = await _context.Championships.FindAsync(championshipId);
 
 
 
@@ -130,7 +167,14 @@ namespace esports.Controllers
             return BadRequest();
         }
 
+        /// <summary>
+        /// Deletes a specific tournament for a specific championship
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

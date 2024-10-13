@@ -23,13 +23,23 @@
                 <span asp-validation-for="Match_In_Round_Number" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TournamentId" class="control-label"></label>
-                <select asp-for="TournamentId" class ="form-control" asp-items="ViewBag.TournamentId"></select>
+                <label asp-for="FirstTeamId" class="control-label"></label>
+                <input asp-for="FirstTeamId" class="form-control" />
+                <span asp-validation-for="FirstTeamId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WinningTeam" class="control-label"></label>
-                <input asp-for="WinningTeam" class="form-control" />
-                <span asp-validation-for="WinningTeam" class="text-danger"></span>
+                <label asp-for="SecondTeamId" class="control-label"></label>
+                <input asp-for="SecondTeamId" class="form-control" />
+                <span asp-validation-for="SecondTeamId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WinningTeamId" class="control-label"></label>
+                <input asp-for="WinningTeamId" class="form-control" />
+                <span asp-validation-for="WinningTeamId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TournamentId" class="control-label"></label>
+                <select asp-for="TournamentId" class ="form-control" asp-items="ViewBag.TournamentId"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
