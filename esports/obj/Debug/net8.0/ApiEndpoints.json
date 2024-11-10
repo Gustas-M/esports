@@ -1,6 +1,16 @@
 [
   {
-    "ContainingType": "esports.Controllers.AuthController",
+    "ContainingType": "esports.Auth.AuthController",
+    "Method": "Refresh",
+    "RelativePath": "api/accessToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "esports.Auth.AuthController",
     "Method": "Login",
     "RelativePath": "api/login",
     "HttpMethod": "POST",
@@ -9,14 +19,14 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "esports.Controllers.AuthController\u002BLoginUserDto",
+        "Type": "esports.Auth.AuthController\u002BLoginUserDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "esports.Controllers.AuthController",
+    "ContainingType": "esports.Auth.AuthController",
     "Method": "Register",
     "RelativePath": "api/register",
     "HttpMethod": "POST",
@@ -25,7 +35,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "esports.Controllers.AuthController\u002BRegisterUserDto",
+        "Type": "esports.Auth.AuthController\u002BRegisterUserDto",
         "IsRequired": true
       }
     ],

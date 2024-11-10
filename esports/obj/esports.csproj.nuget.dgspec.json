@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\esports.csproj": {}
+    "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\esports.csproj": {
+    "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\esports.csproj",
+        "projectUniqueName": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports.csproj",
         "projectName": "esports",
-        "projectPath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\esports.csproj",
-        "packagesPath": "C:\\Users\\Gustas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\esports\\obj\\",
+        "projectPath": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports.csproj",
+        "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gusta\\Desktop\\esports\\esports\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gustas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

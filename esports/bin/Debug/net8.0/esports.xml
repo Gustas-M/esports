@@ -4,17 +4,17 @@
         <name>esports</name>
     </assembly>
     <members>
-        <member name="T:esports.Controllers.AuthController.RegisterUserDto">
+        <member name="T:esports.Auth.AuthController.RegisterUserDto">
             <summary>
             Data transfer object for registering a new user.
             </summary>
         </member>
-        <member name="M:esports.Controllers.AuthController.RegisterUserDto.#ctor(System.String,System.String,System.String)">
+        <member name="M:esports.Auth.AuthController.RegisterUserDto.#ctor(System.String,System.String,System.String)">
             <summary>
             Data transfer object for registering a new user.
             </summary>
         </member>
-        <member name="M:esports.Controllers.AuthController.Register(esports.Controllers.AuthController.RegisterUserDto)">
+        <member name="M:esports.Auth.AuthController.Register(esports.Auth.AuthController.RegisterUserDto)">
             <summary>
             Registers a new user.
             </summary>
