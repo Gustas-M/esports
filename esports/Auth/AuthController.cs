@@ -3,6 +3,7 @@ using esports.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Transactions;
@@ -14,12 +15,14 @@ namespace esports.Auth
         private readonly EsportsContext _context;
         private readonly UserManager<User> _userManager;
         private readonly JwtTokenService _jwtTokenService;
+        private readonly SessionService _sessionService;
 
-        public AuthController(EsportsContext context, UserManager<User> userManager, JwtTokenService jwtTokenService)
+        public AuthController(EsportsContext context, UserManager<User> userManager, JwtTokenService jwtTokenService, SessionService sessionService)
         {
             _context = context;
             _userManager = userManager;
             _jwtTokenService = jwtTokenService;
+            _sessionService = sessionService;
         }
         /// <summary>
         /// Data transfer object for registering a new user.
@@ -87,9 +90,12 @@ namespace esports.Auth
 
             var roles = await _userManager.GetRolesAsync(user);
 
+            var sessionId = Guid.NewGuid();
             var expiresAt = DateTime.UtcNow.AddDays(3);
             var accessToken = _jwtTokenService.CreateAccessToken(user.UserName, user.Id, roles);
-            var refreshToken = _jwtTokenService.CreateRefreshToken(user.Id, expiresAt);
+            var refreshToken = _jwtTokenService.CreateRefreshToken(sessionId, user.Id, expiresAt);
+
+            await _sessionService.CreateSession(sessionId, user.Id, refreshToken, expiresAt);
 
             var cookies = new CookieOptions
             {
@@ -118,6 +124,18 @@ namespace esports.Auth
                 return UnprocessableEntity("Failed to parse");
             }
 
+            var sessionId = claims.FindFirstValue("sessionId");
+            if (string.IsNullOrWhiteSpace(sessionId))
+            {
+                return UnprocessableEntity("Failed to find session id");
+            }
+
+            var sessionIdAsGuid = Guid.Parse(sessionId);
+            if (!await _sessionService.IsSessionValid(sessionIdAsGuid, refreshToken))
+            {
+                return UnprocessableEntity("Session is invalid");
+            }
+
             var userId = claims.FindFirstValue(JwtRegisteredClaimNames.Sub);
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
@@ -129,7 +147,7 @@ namespace esports.Auth
 
             var expiresAt = DateTime.UtcNow.AddDays(3);
             var accessToken = _jwtTokenService.CreateAccessToken(user.UserName, user.Id, roles);
-            var newRefreshToken = _jwtTokenService.CreateRefreshToken(user.UserName, expiresAt);
+            var newRefreshToken = _jwtTokenService.CreateRefreshToken(sessionIdAsGuid, user.UserName, expiresAt);
 
             var cookies = new CookieOptions
             {
@@ -140,9 +158,38 @@ namespace esports.Auth
                 //Secure = true,
             };
 
-            HttpContext.Response.Cookies.Append("refreshToken", refreshToken, cookies);
+            HttpContext.Response.Cookies.Append("refreshToken", newRefreshToken, cookies);
+
+            await _sessionService.ExtendSession(sessionIdAsGuid, newRefreshToken, expiresAt);
 
             return Ok(new SuccessfulLoginDto(accessToken));
+        }
+
+
+        [HttpPost("api/logout")]
+        public async Task<ActionResult> Logout()
+        {
+            if (!HttpContext.Request.Cookies.TryGetValue("refreshToken", out var refreshToken))
+            {
+                return UnprocessableEntity("No refresh token found");
+            }
+
+            if (!_jwtTokenService.TryParseRefreshToken(refreshToken, out var claims))
+            {
+                return UnprocessableEntity("Failed to parse");
+            }
+
+            var sessionId = claims.FindFirstValue("sessionId");
+            if (string.IsNullOrWhiteSpace(sessionId))
+            {
+                return UnprocessableEntity("Failed to find session id");
+            }
+
+            await _sessionService.InvalidateSession(Guid.Parse(sessionId));
+
+            HttpContext.Response.Cookies.Delete("refreshToken");
+
+            return Ok();
         }
 
 

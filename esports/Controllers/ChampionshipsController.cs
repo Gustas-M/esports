@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using esports.Data;
 using esports.Models;
 using System.Net.Mime;
+using Microsoft.AspNetCore.Authorization;
 
 namespace esports.Controllers
 {
@@ -71,6 +72,7 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] Championship championship)
         {
             if (ModelState.IsValid)
@@ -100,6 +102,7 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [FromBody] Championship championship)
         {
             //if (id != championship.Id)
@@ -143,6 +146,7 @@ namespace esports.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

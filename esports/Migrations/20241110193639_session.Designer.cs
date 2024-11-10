@@ -12,8 +12,8 @@ using esports.Data;
 namespace esports.Migrations
 {
     [DbContext(typeof(EsportsContext))]
-    [Migration("20241108141642_Init")]
-    partial class Init
+    [Migration("20241110193639_session")]
+    partial class session
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -157,6 +157,36 @@ namespace esports.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("esports.Auth.Session", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("ExpiresAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTimeOffset>("InitiatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("LastRefreshToken")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("isRevoked")
+                        .HasColumnType("boolean");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Sessions");
+                });
+
             modelBuilder.Entity("esports.Models.Championship", b =>
                 {
                     b.Property<int>("Id")
@@ -169,16 +199,10 @@ namespace esports.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<int>("Year")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Championships");
                 });
@@ -206,18 +230,12 @@ namespace esports.Migrations
                     b.Property<int>("TournamentId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<int?>("WinningTeamId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.HasIndex("TournamentId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Matches");
                 });
@@ -256,15 +274,9 @@ namespace esports.Migrations
                     b.Property<int>("Number_of_rounds")
                         .HasColumnType("integer");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ChampionshipId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Tournaments");
                 });
@@ -384,15 +396,15 @@ namespace esports.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("esports.Models.Championship", b =>
+            modelBuilder.Entity("esports.Auth.Session", b =>
                 {
-                    b.HasOne("esports.Models.User", "User")
+                    b.HasOne("esports.Models.User", "user")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("esports.Models.Match", b =>
@@ -403,15 +415,7 @@ namespace esports.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("esports.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Tournament");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("esports.Models.Tournament", b =>
@@ -422,15 +426,7 @@ namespace esports.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("esports.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Championship");
-
-                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

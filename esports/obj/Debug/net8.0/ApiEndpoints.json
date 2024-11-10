@@ -27,6 +27,16 @@
   },
   {
     "ContainingType": "esports.Auth.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "esports.Auth.AuthController",
     "Method": "Register",
     "RelativePath": "api/register",
     "HttpMethod": "POST",

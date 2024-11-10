@@ -17,11 +17,6 @@ namespace esports.Models
         // Navigation property to Championship
         public Championship Championship { get; set; }
 
-        [Required]
-        public required string UserId { get; set; }
-
-        public User User { get; set; }
-
         public bool IsValid()
         {
             return (!string.IsNullOrEmpty(this.Name))

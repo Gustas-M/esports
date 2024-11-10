@@ -23,6 +23,7 @@ builder.Services.AddDbContext<EsportsContext>(options =>
 
 builder.Services.AddTransient<JwtTokenService>();
 builder.Services.AddScoped<AuthSeeder>();
+builder.Services.AddScoped<SessionService>();
 
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<EsportsContext>()
@@ -36,9 +37,9 @@ builder.Services.AddAuthentication(options =>
 }).AddJwtBearer(options =>
 {
     options.MapInboundClaims = false;
-    options.TokenValidationParameters.ValidAudience = builder.Configuration["Jwt:ValidateAudience"];
-    options.TokenValidationParameters.ValidIssuer = builder.Configuration["Jwt:ValidateIssuer"];
-    options.TokenValidationParameters.IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]));
+    options.TokenValidationParameters.ValidAudience = builder.Configuration["JWT:ValidAudience"];
+    options.TokenValidationParameters.ValidIssuer = builder.Configuration["JWT:ValidIssuer"];
+    options.TokenValidationParameters.IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]));
 });
 
 builder.Services.AddAuthorization();
@@ -84,9 +85,9 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseRouting();
 
 app.UseAuthentication();
+app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(

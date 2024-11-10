@@ -43,12 +43,13 @@ namespace esports.Auth
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public string CreateRefreshToken(string userId, DateTime expires)
+        public string CreateRefreshToken(Guid sessionId,string userId, DateTime expires)
         {
             var authClaims = new List<Claim>
             {
                 new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new(JwtRegisteredClaimNames.Sub, userId)
+                new(JwtRegisteredClaimNames.Sub, userId),
+                new("sessionId", sessionId.ToString())
             };
 
 

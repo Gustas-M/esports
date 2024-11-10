@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace esports.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class session : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -49,6 +49,20 @@ namespace esports.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Championships",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Year = table.Column<int>(type: "integer", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Championships", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -171,20 +185,21 @@ namespace esports.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Championships",
+                name: "Sessions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "text", nullable: false),
-                    Year = table.Column<int>(type: "integer", nullable: false),
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    LastRefreshToken = table.Column<string>(type: "text", nullable: false),
+                    InitiatedAt = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false),
+                    ExpiresAt = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false),
+                    isRevoked = table.Column<bool>(type: "boolean", nullable: false),
                     UserId = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Championships", x => x.Id);
+                    table.PrimaryKey("PK_Sessions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Championships_AspNetUsers_UserId",
+                        name: "FK_Sessions_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -199,18 +214,11 @@ namespace esports.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Number_of_rounds = table.Column<int>(type: "integer", nullable: false),
-                    ChampionshipId = table.Column<int>(type: "integer", nullable: false),
-                    UserId = table.Column<string>(type: "text", nullable: false)
+                    ChampionshipId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Tournaments", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Tournaments_AspNetUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Tournaments_Championships_ChampionshipId",
                         column: x => x.ChampionshipId,
@@ -230,18 +238,11 @@ namespace esports.Migrations
                     FirstTeamId = table.Column<int>(type: "integer", nullable: true),
                     SecondTeamId = table.Column<int>(type: "integer", nullable: true),
                     WinningTeamId = table.Column<int>(type: "integer", nullable: true),
-                    TournamentId = table.Column<int>(type: "integer", nullable: false),
-                    UserId = table.Column<string>(type: "text", nullable: false)
+                    TournamentId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Matches", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Matches_AspNetUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Matches_Tournaments_TournamentId",
                         column: x => x.TournamentId,
@@ -288,29 +289,19 @@ namespace esports.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Championships_UserId",
-                table: "Championships",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Matches_TournamentId",
                 table: "Matches",
                 column: "TournamentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Matches_UserId",
-                table: "Matches",
+                name: "IX_Sessions_UserId",
+                table: "Sessions",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tournaments_ChampionshipId",
                 table: "Tournaments",
                 column: "ChampionshipId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Tournaments_UserId",
-                table: "Tournaments",
-                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -335,6 +326,9 @@ namespace esports.Migrations
                 name: "Matches");
 
             migrationBuilder.DropTable(
+                name: "Sessions");
+
+            migrationBuilder.DropTable(
                 name: "Teams");
 
             migrationBuilder.DropTable(
@@ -344,10 +338,10 @@ namespace esports.Migrations
                 name: "Tournaments");
 
             migrationBuilder.DropTable(
-                name: "Championships");
+                name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "AspNetUsers");
+                name: "Championships");
         }
     }
 }

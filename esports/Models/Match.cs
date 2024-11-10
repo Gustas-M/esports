@@ -15,11 +15,6 @@ namespace esports.Models
         public int TournamentId { get; set; }
         public Tournament Tournament { get; set; }
 
-        [Required]
-        public required string UserId { get; set; }
-
-        public User User { get; set; }
-
 
 
         public bool IsValid(int round_count)

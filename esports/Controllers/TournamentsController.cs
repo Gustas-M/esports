@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using esports.Data;
 using esports.Models;
 using System.Net.Mime;
+using Microsoft.AspNetCore.Authorization;
 
 namespace esports.Controllers
 {
@@ -81,6 +82,7 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create(int championshipId, [FromBody] Tournament tournament)
         {
             var champ = await _context.Championships.FindAsync(championshipId);
@@ -122,15 +124,13 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int championshipId, int id, [FromBody] Tournament tournament)
         {
             ModelState.Remove(nameof(tournament.Championship));
             if (ModelState.IsValid)
             {
-                if (id != tournament.Id)
-                {
-                    return NotFound();
-                }
+
 
                 var champ = await _context.Championships.FindAsync(championshipId);
 
@@ -175,6 +175,7 @@ namespace esports.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using esports.Data;
 using esports.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace esports.Controllers
 {
@@ -54,6 +55,7 @@ namespace esports.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "TeamMember")]
         public async Task<IActionResult> Create([Bind("id,Name")] Team team)
         {
             if (ModelState.IsValid)
@@ -86,6 +88,7 @@ namespace esports.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "TeamMember")]
         public async Task<IActionResult> Edit(int id, [Bind("id,Name")] Team team)
         {
             if (id != team.id)
@@ -137,6 +140,7 @@ namespace esports.Controllers
         // POST: Teams/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "TeamMember")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var team = await _context.Teams.FindAsync(id);
