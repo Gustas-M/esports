@@ -1,10 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using esports.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection;
 
 namespace esports.Data
 {
-    public class EsportsContext : DbContext
+    public class EsportsContext : IdentityDbContext<User>
     {
 
         public EsportsContext(DbContextOptions<EsportsContext> options) : base(options)

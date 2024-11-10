@@ -1,4 +1,5 @@
 ﻿using esports.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace esports.Models
 {
@@ -12,7 +13,12 @@ namespace esports.Models
         public int? WinningTeamId { get; set; }
         // Foreign key to Tournament
         public int TournamentId { get; set; }
-        public Tournament Tournament { get; set; } 
+        public Tournament Tournament { get; set; }
+
+        [Required]
+        public required string UserId { get; set; }
+
+        public User User { get; set; }
 
 
 

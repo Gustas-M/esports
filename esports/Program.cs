@@ -1,18 +1,46 @@
 using esports.Data;
+using esports.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
 var postgreSqlConnectionString = "Host=localhost;Port=5432;Database=esports;Username=postgres;Password=assword";
 
 builder.Services.AddDbContext<EsportsContext>(options =>
     options.UseNpgsql(postgreSqlConnectionString)
 );
+
+builder.Services.AddTransient<JwtTokenService>();
+builder.Services.AddScoped<AuthSeeder>();
+
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<EsportsContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.MapInboundClaims = false;
+    options.TokenValidationParameters.ValidAudience = builder.Configuration["Jwt:ValidateAudience"];
+    options.TokenValidationParameters.ValidIssuer = builder.Configuration["Jwt:ValidateIssuer"];
+    options.TokenValidationParameters.IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]));
+});
+
+builder.Services.AddAuthorization();
 
 
 builder.Services.AddEndpointsApiExplorer();
@@ -31,6 +59,10 @@ builder.Services.AddSwaggerGen(c =>
 
 
 var app = builder.Build();
+using var scope = app.Services.CreateScope();
+var dbContext = scope.ServiceProvider.GetRequiredService<EsportsContext>();
+var dbSeeder = scope.ServiceProvider.GetRequiredService<AuthSeeder>();
+await dbSeeder.SeedAsync();
 
 app.UseSwagger();
 app.UseSwaggerUI(c =>
@@ -53,6 +85,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

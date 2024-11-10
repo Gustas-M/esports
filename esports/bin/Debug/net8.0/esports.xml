@@ -4,6 +4,24 @@
         <name>esports</name>
     </assembly>
     <members>
+        <member name="T:esports.Controllers.AuthController.RegisterUserDto">
+            <summary>
+            Data transfer object for registering a new user.
+            </summary>
+        </member>
+        <member name="M:esports.Controllers.AuthController.RegisterUserDto.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Data transfer object for registering a new user.
+            </summary>
+        </member>
+        <member name="M:esports.Controllers.AuthController.Register(esports.Controllers.AuthController.RegisterUserDto)">
+            <summary>
+            Registers a new user.
+            </summary>
+            <param name="userManager">The user manager to handle user operations.</param>
+            <param name="dto">The data transfer object containing user registration details.</param>
+            <returns>An ActionResult indicating the result of the registration process.</returns>
+        </member>
         <member name="M:esports.Controllers.ChampionshipsController.Index">
             <summary>
             Returns a list of all championships
@@ -121,16 +139,16 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="T:esports.Migrations.InitialMigration">
+        <member name="T:esports.Migrations.Init">
             <inheritdoc />
         </member>
-        <member name="M:esports.Migrations.InitialMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:esports.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:esports.Migrations.InitialMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:esports.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:esports.Migrations.InitialMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:esports.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>
