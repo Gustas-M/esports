@@ -1,0 +1,50 @@
+﻿@page "/Championships"
+@using blazor_frontend.Models
+@using static System.Net.WebRequestMethods
+@using System.Net.Http.Json
+@inject HttpClient Http
+
+<h1 class="text-center mb-3">Championships</h1>
+
+<a class="btn btn-primary mb-3" href="/Championships/Create">New Championship</a>
+
+@if(championships == null)
+{
+    <p><em>Loading...</em></p>
+} 
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var championship in championships)
+            {
+                <tr>
+                    <td>@championship.Id</td>
+                    <td>@championship.Name</td>
+                    <td>@championship.Year</td>
+                    <td style="white-space:nowrap">
+                        <a class="btn btn-primary btn-sm" href="/Championships/Edit/@championship.Id">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="/Championships/Delete/@championship.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Championship>? championships;
+
+    protected override async Task OnInitializedAsync()
+    {
+        championships = await Http.GetFromJsonAsync<List<Championship>>("https://localhost:7068/Championships");
+    }
+}

@@ -1,0 +1,21 @@
+﻿@page "/Championships/Delete/{id:int}"
+@using static System.Net.WebRequestMethods
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h1 class="mb-3">Delete Championship</h1>
+<p>Are you sure you want to delete championship with ID @id?</p>
+<button class="btn btn-danger" @onclick="DeleteChampionship">Delete</button>
+<a class="btn btn-secondary" href="/Championships">Cancel</a>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    protected async Task DeleteChampionship()
+    {
+        var respone = await Http.DeleteAsync($"https://localhost:7068/Championships/{id}");
+        NavigationManager.NavigateTo("/Championships");
+    }
+}
