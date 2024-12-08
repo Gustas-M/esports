@@ -1,0 +1,61 @@
+﻿@page "/Account/Register"
+@using blazor_frontend.Models
+@using static System.Net.WebRequestMethods
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div class="row">
+    <div class="col-lg-8">
+        <h1 class="mb-5">Register</h1>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Username</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="registerDto.UserName">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Email</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="registerDto.Email">
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Password</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="registerDto.Password">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4 col-md-4 d-grid">
+                <button class="btn btn-primary" @onclick="RegisterUser">Register</button>
+            </div>
+            <div class="col-md-4 d-grid">
+                <button class="btn btn-outline-primary" href="/">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public RegisterDto registerDto = new RegisterDto();
+
+    protected async Task RegisterUser()
+    {
+        var response = await Http.PostAsJsonAsync("https://localhost:7068/api/register", registerDto);
+
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/");
+        }
+        else
+        {
+            var strResponse = await response.Content.ReadAsStringAsync();
+            Console.WriteLine("Json response: \n" + strResponse);
+        }
+    }
+}

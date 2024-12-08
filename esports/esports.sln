@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "esports", "esports\esports.
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3752FC4A-19CB-43E4-BE77-022CA8E2DB1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blazor_frontend", "..\blazor_frontend\blazor_frontend.csproj", "{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "blazor_frontend", "..\blazor_frontend\blazor_frontend.csproj", "{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

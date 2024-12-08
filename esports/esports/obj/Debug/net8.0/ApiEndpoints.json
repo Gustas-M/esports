@@ -77,7 +77,7 @@
     "Parameters": [
       {
         "Name": "championship",
-        "Type": "esports.Models.Championship",
+        "Type": "esports.Models.ChampionshipDto",
         "IsRequired": true
       }
     ],
@@ -136,7 +136,7 @@
       },
       {
         "Name": "tournament",
-        "Type": "esports.Models.Tournament",
+        "Type": "esports.Models.TournamentDto",
         "IsRequired": true
       }
     ],
@@ -215,7 +215,7 @@
       },
       {
         "Name": "tournament",
-        "Type": "esports.Models.Tournament",
+        "Type": "esports.Models.TournamentDto",
         "IsRequired": true
       }
     ],
@@ -516,7 +516,7 @@
       },
       {
         "Name": "championship",
-        "Type": "esports.Models.Championship",
+        "Type": "esports.Models.ChampionshipDto",
         "IsRequired": true
       }
     ],

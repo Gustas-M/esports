@@ -82,8 +82,8 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create(int championshipId, [FromBody] Tournament tournament)
+        //[Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create(int championshipId, [FromBody] TournamentDto tournament)
         {
             var champ = await _context.Championships.FindAsync(championshipId);
             if (champ == null)
@@ -91,25 +91,31 @@ namespace esports.Controllers
                 return NotFound();
             }
 
+            tournament.ChampionshipId = championshipId;
 
-
-            ModelState.Remove(nameof(tournament.Championship));
 
             if (ModelState.IsValid)
             {
-                tournament.ChampionshipId = championshipId;
-                tournament.Championship = champ;
                 if (tournament.IsValid())
                 {
-                    _context.Tournaments.Add(tournament);
+                    Tournament tournamentDbObj = new Tournament
+                    {
+                        Name = tournament.Name,
+                        Number_of_rounds = tournament.Number_of_rounds,
+                        Championship = champ,
+                        ChampionshipId = championshipId
+                    };
+                    _context.Tournaments.Add(tournamentDbObj);
                     await _context.SaveChangesAsync();
-                    return CreatedAtAction(nameof(Details), new { id = tournament.Id }, tournament);
+                    return CreatedAtAction(nameof(Details), new { id = tournamentDbObj.Id }, tournamentDbObj);
                 }
 
                 return UnprocessableEntity();
             }
 
-            return BadRequest(ModelState);
+            var validation = new ValidationProblemDetails(ModelState);
+
+            return BadRequest(validation);
         }
 
         /// <summary>
@@ -124,47 +130,37 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int championshipId, int id, [FromBody] Tournament tournament)
+        //[Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int championshipId, int id, [FromBody] TournamentDto tournament)
         {
-            ModelState.Remove(nameof(tournament.Championship));
-            if (ModelState.IsValid)
+            var tournamentDbObj = await _context.Tournaments.FindAsync(id);
+            if(tournamentDbObj == null)
             {
-
-
-                var champ = await _context.Championships.FindAsync(championshipId);
-
-
-
-                try
-                {
-                    tournament.Championship = champ;
-                    tournament.ChampionshipId = championshipId;
-
-                    if (tournament.IsValid())
-                    {
-                        _context.Update(tournament);
-                        await _context.SaveChangesAsync();
-                        return Ok(tournament);
-                    }
-
-                    return UnprocessableEntity();
-
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!TournamentExists(tournament.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                return NotFound();
             }
 
-            return BadRequest();
+            if (ModelState.IsValid)
+            {
+                var champ = await _context.Championships.FindAsync(championshipId);
+
+                if (tournament.IsValid())
+                {
+                    tournamentDbObj.Name = tournament.Name;
+                    tournamentDbObj.Number_of_rounds = tournament.Number_of_rounds;
+                    tournamentDbObj.ChampionshipId = championshipId;
+                    tournamentDbObj.Championship = champ;
+
+                    _context.Update(tournamentDbObj);
+                    await _context.SaveChangesAsync();
+                    return Ok(tournamentDbObj);
+                }
+
+                return UnprocessableEntity();
+            }
+
+            var validation = new ValidationProblemDetails(ModelState);
+
+            return BadRequest(validation);
         }
 
         /// <summary>
@@ -175,7 +171,7 @@ namespace esports.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

@@ -35,14 +35,14 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:esports.Controllers.ChampionshipsController.Create(esports.Models.Championship)">
+        <member name="M:esports.Controllers.ChampionshipsController.Create(esports.Models.ChampionshipDto)">
             <summary>
             Creates a new championship with specified parameters
             </summary>
             <param name="championship"></param>
             <returns></returns>
         </member>
-        <member name="M:esports.Controllers.ChampionshipsController.Edit(System.Int32,esports.Models.Championship)">
+        <member name="M:esports.Controllers.ChampionshipsController.Edit(System.Int32,esports.Models.ChampionshipDto)">
             <summary>
             Edits a championship with specified parameters
             </summary>
@@ -115,7 +115,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:esports.Controllers.TournamentsController.Create(System.Int32,esports.Models.Tournament)">
+        <member name="M:esports.Controllers.TournamentsController.Create(System.Int32,esports.Models.TournamentDto)">
             <summary>
             Creates a new tournament for a specific championship
             </summary>
@@ -123,7 +123,7 @@
             <param name="tournament"></param>
             <returns></returns>
         </member>
-        <member name="M:esports.Controllers.TournamentsController.Edit(System.Int32,System.Int32,esports.Models.Tournament)">
+        <member name="M:esports.Controllers.TournamentsController.Edit(System.Int32,System.Int32,esports.Models.TournamentDto)">
             <summary>
             Edits a specific tournament for a specific championship
             </summary>
@@ -139,16 +139,16 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="T:esports.Migrations.session">
+        <member name="T:esports.Migrations.InitialMigration">
             <inheritdoc />
         </member>
-        <member name="M:esports.Migrations.session.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:esports.Migrations.InitialMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:esports.Migrations.session.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:esports.Migrations.InitialMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:esports.Migrations.session.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:esports.Migrations.InitialMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

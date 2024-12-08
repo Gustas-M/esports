@@ -133,7 +133,8 @@ namespace esports.Controllers
             {
                 match.TournamentId = tournamentId;
                 match.Tournament = tournament;
-                int round_count = tournament.Number_of_rounds;
+                //int round_count = tournament.Number_of_rounds;
+                int round_count = 0;
                 if (match.IsValid(round_count))
                 {
                     _context.Matches.Add(match);
@@ -198,7 +199,8 @@ namespace esports.Controllers
                 {
                     match.TournamentId = tournamentId;
                     match.Tournament = tournament;
-                    int round_count = tournament.Number_of_rounds;
+                    //int round_count = tournament.Number_of_rounds;
+                    int round_count = 0;
                     if (match.IsValid(round_count))
                     {
                         _context.Update(match);

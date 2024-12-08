@@ -1,0 +1,52 @@
+﻿@page "/Championships/{id:int}/Tournaments"
+@using blazor_frontend.Models
+@using static System.Net.WebRequestMethods
+@using System.Net.Http.Json
+@inject HttpClient Http
+
+<h1 class="text-center mb-3">Tournaments</h1>
+
+<a class="btn btn-primary mb-3" href="/Championships/@id/Tournaments/Create">New Tournament</a>
+
+@if (tournaments == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Number of Rounds</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tournament in tournaments)
+            {
+                <tr>
+                    <td>@tournament.Id</td>
+                    <td>@tournament.Name</td>
+                    <td>@tournament.Number_of_rounds</td>
+                    <td style="white-space:nowrap">
+                        <a class="btn btn-primary btn-sm" href="/Championships/@id/Tournaments/@tournament.Id/Edit">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="/Championships/@id/Tournaments/@tournament.Id/Delete">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+    private List<Tournament>? tournaments;
+
+    protected override async Task OnInitializedAsync()
+    {
+        tournaments = await Http.GetFromJsonAsync<List<Tournament>>($"https://localhost:7068/Championships/{id}/Tournaments");
+    }
+}

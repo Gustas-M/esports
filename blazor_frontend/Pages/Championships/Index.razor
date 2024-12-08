@@ -4,7 +4,7 @@
 @using System.Net.Http.Json
 @inject HttpClient Http
 
-<h1 class="text-center mb-3">Championships</h1>
+<h1 class="text-center mb-3">Championship</h1>
 
 <a class="btn btn-primary mb-3" href="/Championships/Create">New Championship</a>
 
@@ -31,8 +31,9 @@ else
                     <td>@championship.Name</td>
                     <td>@championship.Year</td>
                     <td style="white-space:nowrap">
-                        <a class="btn btn-primary btn-sm" href="/Championships/Edit/@championship.Id">Edit</a>
-                        <a class="btn btn-danger btn-sm" href="/Championships/Delete/@championship.Id">Delete</a>
+                        <a class="btn btn-primary btn-sm" href="/Championships/@championship.Id/Edit">Edit</a>
+                        <a class="btn btn-secondary btn-sm" href="/Championships/@championship.Id/Tournaments">View</a>
+                        <a class="btn btn-danger btn-sm" href="/Championships/@championship.Id/Delete">Delete</a>
                     </td>
                 </tr>
             }
