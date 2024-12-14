@@ -7,10 +7,25 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using esports.Data;
 using esports.Models;
+using System.Net.Mime;
 using Microsoft.AspNetCore.Authorization;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Transactions;
 
 namespace esports.Controllers
 {
+    [Route("Teams")]
+    [Produces(MediaTypeNames.Application.Json)]
+    [Consumes(MediaTypeNames.Application.Json)]
+    //[ApiController]
     public class TeamsController : Controller
     {
         private readonly EsportsContext _context;
@@ -20,13 +35,27 @@ namespace esports.Controllers
             _context = context;
         }
 
-        // GET: Teams
+        // GET: Championships
+        /// <summary>
+        /// Returns a list of all championships
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Teams.ToListAsync());
+            return Ok(await _context.Teams.ToListAsync());
         }
 
-        // GET: Teams/Details/5
+        // GET: Championships/Details/5
+        /// <summary>
+        /// Returns a specific championship
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -35,91 +64,99 @@ namespace esports.Controllers
             }
 
             var team = await _context.Teams
-                .FirstOrDefaultAsync(m => m.id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (team == null)
             {
                 return NotFound();
             }
 
-            return View(team);
+            return Ok(team);
         }
 
-        // GET: Teams/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Teams/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        /// <summary>
+        /// Creates a new championship with specified parameters
+        /// </summary>
+        /// <param name="championship"></param>
+        /// <returns></returns>
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Authorize(Roles = "TeamMember")]
-        public async Task<IActionResult> Create([Bind("id,Name")] Team team)
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
+        //[Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create([FromBody] TeamDto team)
         {
-            if (ModelState.IsValid)
+            var tmp = _context.Teams.FirstOrDefault(c => c.Name == team.Name);
+            if (tmp != null)
             {
-                _context.Add(team);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(team);
-        }
-
-        // GET: Teams/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var team = await _context.Teams.FindAsync(id);
-            if (team == null)
-            {
-                return NotFound();
-            }
-            return View(team);
-        }
-
-        // POST: Teams/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Authorize(Roles = "TeamMember")]
-        public async Task<IActionResult> Edit(int id, [Bind("id,Name")] Team team)
-        {
-            if (id != team.id)
-            {
-                return NotFound();
+                return UnprocessableEntity();
             }
 
             if (ModelState.IsValid)
             {
-                try
+                if (team.IsValid())
                 {
-                    _context.Update(team);
+                    Team TeamDbObj = new Team(team.Name, HttpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub));
+                    _context.Add(TeamDbObj);
                     await _context.SaveChangesAsync();
+                    return CreatedAtAction("POST", new { id = TeamDbObj.Id }, TeamDbObj);
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!TeamExists(team.id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+
+                return UnprocessableEntity();
+
             }
-            return View(team);
+
+            var validation = new ValidationProblemDetails(ModelState);
+
+            return BadRequest(validation);
         }
 
-        // GET: Teams/Delete/5
+        /// <summary>
+        /// Edits a championship with specified parameters
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="championship"></param>
+        /// <returns></returns>
+        [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
+        //[Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(int id, [FromBody] TeamDto team)
+        {
+            var teamDbObj = await _context.Teams.FindAsync(id);
+            if (teamDbObj == null)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                if (team.IsValid())
+                {
+                    teamDbObj.Name = team.Name;                    
+                    _context.Update(teamDbObj);
+                    await _context.SaveChangesAsync();
+                    return Ok(team);
+                }
+
+                return UnprocessableEntity();
+            }
+
+            var validation = new ValidationProblemDetails(ModelState);
+
+            return BadRequest(validation);
+        }
+
+        /// <summary>
+        /// Deletes a championship with specified ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -128,34 +165,18 @@ namespace esports.Controllers
             }
 
             var team = await _context.Teams
-                .FirstOrDefaultAsync(m => m.id == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (team == null)
             {
                 return NotFound();
             }
 
-            return View(team);
-        }
 
-        // POST: Teams/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        [Authorize(Roles = "TeamMember")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var team = await _context.Teams.FindAsync(id);
-            if (team != null)
-            {
-                _context.Teams.Remove(team);
-            }
+            _context.Teams.Remove(team);
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return NoContent();
         }
 
-        private bool TeamExists(int id)
-        {
-            return _context.Teams.Any(e => e.id == id);
-        }
     }
 }

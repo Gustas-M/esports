@@ -196,7 +196,7 @@ namespace esports.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("Year")
+                    b.Property<int?>("Year")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
@@ -224,7 +224,7 @@ namespace esports.Migrations
                     b.Property<int?>("SecondTeamId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("TournamentId")
+                    b.Property<int?>("TournamentId")
                         .HasColumnType("integer");
 
                     b.Property<int?>("WinningTeamId")
@@ -232,23 +232,34 @@ namespace esports.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("FirstTeamId");
+
+                    b.HasIndex("SecondTeamId");
+
                     b.HasIndex("TournamentId");
+
+                    b.HasIndex("WinningTeamId");
 
                     b.ToTable("Matches");
                 });
 
             modelBuilder.Entity("esports.Models.Team", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
-                    b.HasKey("id");
+                    b.Property<string>("UserId")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Teams");
                 });
@@ -261,14 +272,14 @@ namespace esports.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ChampionshipId")
+                    b.Property<int?>("ChampionshipId")
                         .HasColumnType("integer");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("Number_of_rounds")
+                    b.Property<int?>("Number_of_rounds")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
@@ -406,22 +417,45 @@ namespace esports.Migrations
 
             modelBuilder.Entity("esports.Models.Match", b =>
                 {
+                    b.HasOne("esports.Models.Team", "FirstTeam")
+                        .WithMany()
+                        .HasForeignKey("FirstTeamId");
+
+                    b.HasOne("esports.Models.Team", "SecondTeam")
+                        .WithMany()
+                        .HasForeignKey("SecondTeamId");
+
                     b.HasOne("esports.Models.Tournament", "Tournament")
                         .WithMany()
-                        .HasForeignKey("TournamentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TournamentId");
+
+                    b.HasOne("esports.Models.Team", "WinningTeam")
+                        .WithMany()
+                        .HasForeignKey("WinningTeamId");
+
+                    b.Navigation("FirstTeam");
+
+                    b.Navigation("SecondTeam");
 
                     b.Navigation("Tournament");
+
+                    b.Navigation("WinningTeam");
+                });
+
+            modelBuilder.Entity("esports.Models.Team", b =>
+                {
+                    b.HasOne("esports.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("esports.Models.Tournament", b =>
                 {
                     b.HasOne("esports.Models.Championship", "Championship")
                         .WithMany()
-                        .HasForeignKey("ChampionshipId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ChampionshipId");
 
                     b.Navigation("Championship");
                 });

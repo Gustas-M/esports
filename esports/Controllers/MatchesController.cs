@@ -35,29 +35,17 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> Index(int championshipId, int tournamentId)
         {
-            var matches = await _context.Matches
+            var matches = _context.Matches
+                .Include(m => m.FirstTeam)
+                .Include(m => m.SecondTeam)
+                .Include(m => m.WinningTeam)
                 .Where(m => m.TournamentId == tournamentId)
-                .Include(m => m.Tournament)
-                .Select(m => new
-                {
-                    m.Id,
-                    m.Round_Number,
-                    m.Match_In_Round_Number,
-                    m.FirstTeamId,
-                    m.SecondTeamId,
-                    m.WinningTeamId,
-                    m.TournamentId,
-                    Tournament = new
-                    {
-                        m.Tournament.Id,
-                        m.Tournament.Name,
-                        m.Tournament.Number_of_rounds,
-                        m.Tournament.ChampionshipId
-                    }
-                })
                 .ToListAsync();
 
-            return Ok(matches);
+            //return Ok(matches);
+            //var matches = _context.Matches.Where(t => t.TournamentId == tournamentId).Include(t => t.Tournament).ToListAsync();
+
+            return Ok(await matches);
         }
 
         // GET: Matches/Details/5
@@ -113,57 +101,47 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create(int championshipId, int tournamentId, [FromBody] Match match)
+        [Authorize(Roles = Roles.Admin)]
+        public async Task<IActionResult> Create(int championshipId, int tournamentId, [FromBody] MatchDto match)
         {
             // Validate the tournamentId
             var tournament = await _context.Tournaments.FindAsync(tournamentId);
-            if (tournament == null || tournament.ChampionshipId != championshipId)
+            if (tournament == null)
             {
                 return NotFound();
             }
 
-            // Set the TournamentId for the match
-
-
-            // Remove the Tournament property from ModelState validation
-            ModelState.Remove(nameof(match.Tournament));
+            if (!tournament.Number_of_rounds.HasValue)
+            {
+                return UnprocessableEntity();
+            }
+                        
 
             if (ModelState.IsValid)
             {
-                match.TournamentId = tournamentId;
-                match.Tournament = tournament;
-                int round_count = tournament.Number_of_rounds;
-                if (match.IsValid(round_count))
+                if (match.IsValid(tournament.Number_of_rounds.Value))
                 {
-                    _context.Matches.Add(match);
-                    await _context.SaveChangesAsync();
-
-
-                    var createdMatch = await _context.Matches
-                    .Include(m => m.Tournament)
-                    .Where(m => m.Id == match.Id)
-                    .Select(m => new
+                    Team? firstTeam = await _context.Teams.FindAsync(match.FirstTeamId);
+                    Team? secondTeam = await _context.Teams.FindAsync(match.SecondTeamId);
+                    Team? winningTeam = await _context.Teams.FindAsync(match.WinningTeamId);
+                    Match matchDbObj = new Match
                     {
-                        m.Id,
-                        m.Round_Number,
-                        m.Match_In_Round_Number,
-                        m.FirstTeamId,
-                        m.SecondTeamId,
-                        m.WinningTeamId,
-                        m.TournamentId,
-                        Tournament = new
-                        {
-                            m.Tournament.Id,
-                            m.Tournament.Name,
-                            m.Tournament.Number_of_rounds,
-                            m.Tournament.ChampionshipId
-                        }
-                    })
-                    .FirstOrDefaultAsync();
+                        Round_Number = match.Round_Number,
+                        Match_In_Round_Number = match.Match_In_Round_Number,
+                        FirstTeamId = match.FirstTeamId,
+                        FirstTeam = firstTeam,
+                        SecondTeamId = match.SecondTeamId,
+                        SecondTeam = secondTeam,
+                        WinningTeamId = match.WinningTeamId,
+                        WinningTeam = winningTeam,
+                        TournamentId = tournamentId,
+                        Tournament = tournament
+                    };
 
-                    return CreatedAtAction(nameof(Details), new { championshipId, tournamentId, id = match.Id }, createdMatch);
-                }
+                    _context.Matches.Add(matchDbObj);
+                    await _context.SaveChangesAsync();
+                    return CreatedAtAction(nameof(Details), new { championshipId, tournamentId, id = matchDbObj.Id }, matchDbObj);
+                }                 
 
                 return UnprocessableEntity();
             }
@@ -185,46 +163,52 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int championshipId, int tournamentId, int id, [FromBody] Match match)
+        [Authorize(Roles = Roles.Admin)]
+        public async Task<IActionResult> Edit(int championshipId, int tournamentId, int id, [FromBody] MatchDto match)
         {
 
-            var tournament = await _context.Tournaments.FindAsync(tournamentId);
-            ModelState.Remove(nameof(match.Tournament));
-
-            if (ModelState.IsValid)
+            var matchDbObj = await _context.Matches.FindAsync(id);
+            if (matchDbObj == null)
             {
-                try
-                {
-                    match.TournamentId = tournamentId;
-                    match.Tournament = tournament;
-                    int round_count = tournament.Number_of_rounds;
-                    if (match.IsValid(round_count))
-                    {
-                        _context.Update(match);
-                        await _context.SaveChangesAsync();
-                        return Ok(match);
-                    }
-
-                    return UnprocessableEntity();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!MatchExists(match.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-
-
+                return NotFound();
             }
 
             
-            return BadRequest(ModelState);
+
+            if (ModelState.IsValid)
+            {
+                var tournament = await _context.Tournaments.FindAsync(tournamentId);
+
+                if (!tournament.Number_of_rounds.HasValue)
+                {
+                    return UnprocessableEntity();
+                }
+
+                if (matchDbObj.IsValid(tournament.Number_of_rounds.Value))
+                {
+
+                    matchDbObj.Round_Number = match.Round_Number;
+                    matchDbObj.Match_In_Round_Number = match.Match_In_Round_Number;
+                    matchDbObj.FirstTeamId = match.FirstTeamId;
+                    Team? firstTeam = await _context.Teams.FindAsync(match.FirstTeamId);
+                    Team? secondTeam = await _context.Teams.FindAsync(match.SecondTeamId);
+                    Team? winningTeam = await _context.Teams.FindAsync(match.WinningTeamId);
+                    matchDbObj.SecondTeamId = match.SecondTeamId;
+                    matchDbObj.WinningTeamId = match.WinningTeamId;
+                    matchDbObj.TournamentId = tournamentId;
+                    matchDbObj.Tournament = tournament;
+
+                    _context.Update(matchDbObj);
+                    await _context.SaveChangesAsync();
+                    return Ok(matchDbObj);
+                }
+
+                return UnprocessableEntity();
+            }
+
+            var validation = new ValidationProblemDetails(ModelState);
+
+            return BadRequest(validation);
         }
 
         /// <summary>
@@ -235,7 +219,7 @@ namespace esports.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = Roles.Admin)]
         public async Task<IActionResult> Delete(int id)
         {
             if (id == null)

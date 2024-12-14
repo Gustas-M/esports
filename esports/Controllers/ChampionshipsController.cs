@@ -72,23 +72,36 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([FromBody] Championship championship)
+        [Authorize(Roles = Roles.Admin)]
+        public async Task<IActionResult> Create([FromBody] ChampionshipDto championship)
         {
+            var tmp = _context.Championships.FirstOrDefault(c => c.Name == championship.Name && c.Year == championship.Year);
+            if (tmp != null)
+            {
+                return UnprocessableEntity();
+            }
+
             if (ModelState.IsValid)
             {     
                 if (championship.IsValid())
                 {
-                    _context.Add(championship);
+                    Championship champDbObj = new Championship
+                    {
+                        Name = championship.Name,
+                        Year = championship.Year
+                    };
+                    _context.Add(champDbObj);
                     await _context.SaveChangesAsync();
-                    return CreatedAtAction("POST", new { id = championship.Id }, championship);
+                    return CreatedAtAction("POST", new { id = champDbObj.Id }, champDbObj);
                 }
 
                 return UnprocessableEntity();
 
             }
+
+            var validation = new ValidationProblemDetails(ModelState);
                        
-            return BadRequest();
+            return BadRequest(validation);
         }
 
         /// <summary>
@@ -102,40 +115,32 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [FromBody] Championship championship)
+        [Authorize(Roles = Roles.Admin)]
+        public async Task<IActionResult> Edit(int id, [FromBody] ChampionshipDto championship)
         {
-            //if (id != championship.Id)
-            //{
-            //    return NotFound();
-            //}
+            var champDbObj = await _context.Championships.FindAsync(id);
+            if (champDbObj == null)
+            {
+                return NotFound();
+            }
 
             if (ModelState.IsValid)
             {
-                try
+                if (championship.IsValid())
                 {
-                    if (championship.IsValid())
-                    {
-                        _context.Update(championship);
-                        await _context.SaveChangesAsync();
-                        return Ok(championship);
-                    }
+                    champDbObj.Name = championship.Name;
+                    champDbObj.Year = championship.Year;
+                    _context.Update(champDbObj);
+                    await _context.SaveChangesAsync();
+                    return Ok(championship);
+                }
 
-                    return UnprocessableEntity();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ChampionshipExists(championship.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                return UnprocessableEntity();
             }
-            return BadRequest(championship);
+
+            var validation = new ValidationProblemDetails(ModelState);
+
+            return BadRequest(validation);
         }
 
         /// <summary>
@@ -146,7 +151,7 @@ namespace esports.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = Roles.Admin)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

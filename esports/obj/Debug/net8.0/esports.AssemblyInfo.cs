@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("esports")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ff15df60392ce514f785c8744eb540619302835")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eeb58d3c8a529b493319c4d14022372ba83fb759")]
 [assembly: System.Reflection.AssemblyProductAttribute("esports")]
 [assembly: System.Reflection.AssemblyTitleAttribute("esports")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,7 +2,17 @@
 {
     public class Team
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string? Name { get; set; }
+
+        public string? UserId { get; set; }      
+        public User? User { get; set; }
+
+
+        public Team(string? name, string? userId)
+        {
+            this.Name = name;
+            UserId = userId;            
+        }
     }
 }
