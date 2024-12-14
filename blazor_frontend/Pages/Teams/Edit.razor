@@ -1,0 +1,98 @@
+﻿@page "/Teams/{id:int}/Edit"
+@using System.Text.Json.Nodes
+@using blazor_frontend.Models
+@using static System.Net.WebRequestMethods
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<PageTitle>Team editing</PageTitle>
+
+<div class="row">
+    <div class="col-lg-8">
+        <h1 class="mb-5">Edit Team</h1>
+    </div>
+
+    @if (team == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Name</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="teamData.Name">
+                <span class="text-danger">@Errors["Name"]?[0]</span>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="offset-md-4 col-md-4 d-grid">
+                <button class="btn btn-primary" @onclick="UpdateTeam">Submit</button>
+            </div>
+            <div class="col-md-4 d-grid">
+                <a class="btn btn-secondary" href="/Teams">Cancel</a>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+    public Team? team = null;
+    public TeamDto teamData = new TeamDto();
+    public JsonNode Errors = new JsonObject();
+
+    protected async Task UpdateTeam()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
+        string tokenVal = TokenHelper.ConvertToken(token);
+
+        var request = new HttpRequestMessage(HttpMethod.Put, $"https://localhost:7068/Teams/{id}")
+            {
+                Content = JsonContent.Create(teamData)
+            };
+
+        // Add the authorization header
+        request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
+
+        // Send the request
+        var response = await Http.SendAsync(request);
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/Teams");
+        }
+        else
+        {
+            var strResponse = await response.Content.ReadAsStringAsync();
+            Console.WriteLine("Json response: \n" + strResponse);
+
+            try
+            {
+                var jsonResponse = JsonNode.Parse(strResponse);
+                Errors = jsonResponse?["errors"] ?? new JsonObject();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        try
+        {
+            team = await Http.GetFromJsonAsync<Team>($"https://localhost:7068/Teams/{id}");
+            teamData.Name = team?.Name ?? "";            
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+}

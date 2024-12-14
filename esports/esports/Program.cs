@@ -1,3 +1,4 @@
+using Blazored.Modal;
 using esports.Auth;
 using esports.Data;
 using esports.Models;
@@ -40,6 +41,10 @@ builder.Services.AddAuthentication(options =>
     options.TokenValidationParameters.ValidAudience = builder.Configuration["JWT:ValidAudience"];
     options.TokenValidationParameters.ValidIssuer = builder.Configuration["JWT:ValidIssuer"];
     options.TokenValidationParameters.IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]));
+    options.TokenValidationParameters.ValidateIssuer = true;
+    options.TokenValidationParameters.ValidateAudience = true;
+    options.TokenValidationParameters.ValidateLifetime = true;
+    options.TokenValidationParameters.ValidateIssuerSigningKey = true;
 });
 
 builder.Services.AddAuthorization();
@@ -57,6 +62,8 @@ builder.Services.AddSwaggerGen(c =>
     c.IncludeXmlComments(xmlPath);
 });
 
+
+builder.Services.AddBlazoredModal();
 
 
 

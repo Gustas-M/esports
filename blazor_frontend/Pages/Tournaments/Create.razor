@@ -6,6 +6,8 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
+<PageTitle>Tournament creation</PageTitle>
+
 <div class="row">
     <div class="col-lg-8">
         <h1 class="mb-5">New Tournaments</h1>
@@ -31,7 +33,7 @@
                 <button class="btn btn-primary" @onclick="CreateTournament">Submit</button>
             </div>
             <div class="col-md-4 d-grid">
-                <a class="btn btn-secondary" href="/Championships">Cancel</a>
+                <a class="btn btn-secondary" href="/Championships/@id/Tournaments">Cancel</a>
             </div>
         </div>
     </div>
@@ -46,7 +48,17 @@
     protected async Task CreateTournament()
     {
         tournament.ChampionshipId = id;
-        var response = await Http.PostAsJsonAsync($"https://localhost:7068/Championships/{id}/Tournaments", tournament);
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
+        string tokenVal = TokenHelper.ConvertToken(token);
+
+        var request = new HttpRequestMessage(HttpMethod.Post, $"https://localhost:7068/Championships/{id}/Tournaments")
+            {
+                Content = JsonContent.Create(tournament)
+            };
+
+        request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
+
+        var response = await Http.SendAsync(request);
 
         if (response.IsSuccessStatusCode)
         {

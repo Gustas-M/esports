@@ -5,6 +5,9 @@
 @using System.Net.Http.Json
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using blazor_frontend.Components
+
+<PageTitle>Championship editing</PageTitle>
 
 <div class="row">
     <div class="col-lg-8">
@@ -53,7 +56,21 @@
 
     protected async Task UpdateChampionship()
     {
-        var response = await Http.PutAsJsonAsync($"https://localhost:7068/Championships/{id}", champData);
+        // Retrieve the token from local storage
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
+        string tokenVal = TokenHelper.ConvertToken(token);
+
+        var request = new HttpRequestMessage(HttpMethod.Put, $"https://localhost:7068/Championships/{id}")
+        {
+            Content = JsonContent.Create(champData)
+        };
+
+        // Add the authorization header
+        request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
+
+        // Send the request
+        var response = await Http.SendAsync(request);
+        // var response = await Http.PutAsJsonAsync($"https:localhost:7068/Championships/{id}", champData);
         if (response.IsSuccessStatusCode)
         {
             NavigationManager.NavigateTo("/Championships");

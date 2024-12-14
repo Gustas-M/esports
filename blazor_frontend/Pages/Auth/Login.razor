@@ -4,6 +4,7 @@
 @using System.Net.Http.Json
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@inject IJSRuntime JS
 
 <div class="row">
     <div class="col-lg-8">
@@ -43,6 +44,9 @@
 
         if (response.IsSuccessStatusCode)
         {
+            var token = await response.Content.ReadAsStringAsync(); // Assuming the token is returned as plain text
+            await JS.InvokeVoidAsync("localStorage.setItem", "access_token", token);
+
             NavigationManager.NavigateTo("/");
         }
         else

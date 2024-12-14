@@ -1,0 +1,134 @@
+﻿@page "/Championships/{champId:int}/Tournaments/{tournamentId:int}/Matches/Create"
+@using System.Text.Json.Nodes
+@using blazor_frontend.Models
+@using static System.Net.WebRequestMethods
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<PageTitle>Match creation</PageTitle>
+
+<div class="row">
+    <div class="col-lg-8">
+        <h1 class="mb-5">New Match</h1>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Round number</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="match.Round_Number">
+                <span class="text-danger">@Errors["Round_number"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Match number in round</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="match.Match_In_Round_Number">
+                <span class="text-danger">@Errors["Match_in_round_number"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">First Team</label>
+            <div class="col-md-8">
+                <select class="form-control" @bind="match.FirstTeamId">
+                    <option value="">Select a team</option>
+                    @foreach (var team in teams)
+                    {
+                        <option value="@team.Id">@team.Name</option>
+                    }
+                </select>
+                <span class="text-danger">@Errors["FirstTeamId"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Second Team</label>
+            <div class="col-md-8">
+                <select class="form-control" @bind="match.SecondTeamId">
+                    <option value="">Select a team</option>
+                    @foreach (var team in teams)
+                    {
+                        <option value="@team.Id">@team.Name</option>
+                    }
+                </select>
+                <span class="text-danger">@Errors["SecondTeamId"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Winning Team</label>
+            <div class="col-md-8">
+                <select class="form-control" @bind="match.WinningTeamId">
+                    <option value="">Select a team</option>
+                    @foreach (var team in teams)
+                    {
+                        <option value="@team.Id">@team.Name</option>
+                    }
+                </select>
+                <span class="text-danger">@Errors["WinningTeamId"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4 col-md-4 d-grid">
+                <button class="btn btn-primary" @onclick="CreateMatch">Submit</button>
+            </div>
+            <div class="col-md-4 d-grid">
+                <a class="btn btn-secondary" href="/Championships/@champId/Tournaments/@tournamentId/Matches">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int champId { get; set; }
+    [Parameter]
+    public int tournamentId { get; set; }
+    public MatchDto match = new MatchDto();
+    public JsonNode Errors = new JsonObject();
+    public List<Team>? teams = new List<Team>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        teams = await Http.GetFromJsonAsync<List<Team>>("https://localhost:7068/Teams");
+    }
+
+    protected async Task CreateMatch()
+    {
+        match.TournamentId = tournamentId;
+        // var response = await Http.PostAsJsonAsync($"https:localhost:7068/Championships/{champId}/Tournaments/{tournamentId}/Matches", match);
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
+        string tokenVal = TokenHelper.ConvertToken(token);
+
+        var request = new HttpRequestMessage(HttpMethod.Post, $"https://localhost:7068/Championships/{champId}/Tournaments/{tournamentId}/Matches")
+            {
+                Content = JsonContent.Create(match)
+            };
+
+        request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
+
+        var response = await Http.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo($"/Championships/{champId}/Tournaments/{tournamentId}/Matches");
+        }
+        else
+        {
+            var strResponse = await response.Content.ReadAsStringAsync();
+            Console.WriteLine("Json response: \n" + strResponse);
+
+            try
+            {
+                var jsonResponse = JsonNode.Parse(strResponse);
+                Errors = jsonResponse?["errors"] ?? new JsonObject();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+    }
+}

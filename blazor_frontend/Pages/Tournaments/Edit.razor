@@ -6,6 +6,8 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
+<PageTitle>Team editing</PageTitle>
+
 <div class="row">
     <div class="col-lg-8">
         <h1 class="mb-5">Edit Championship</h1>
@@ -55,7 +57,19 @@
 
     protected async Task UpdateTournament()
     {
-        var response = await Http.PutAsJsonAsync($"https://localhost:7068/Championships/{champId}/Tournaments/{id}", tournamentData);
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
+        string tokenVal = TokenHelper.ConvertToken(token);
+
+        var request = new HttpRequestMessage(HttpMethod.Put, $"https://localhost:7068/Championships/{champId}/Tournaments/{id}")
+            {
+                Content = JsonContent.Create(tournamentData)
+            };
+
+        // Add the authorization header
+        request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
+
+        // Send the request
+        var response = await Http.SendAsync(request);
         if (response.IsSuccessStatusCode)
         {
             NavigationManager.NavigateTo("/Championships");

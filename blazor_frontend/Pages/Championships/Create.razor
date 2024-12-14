@@ -1,10 +1,16 @@
 ﻿@page "/Championships/Create"
 @using System.Text.Json.Nodes
+@using System.Text.Json
 @using blazor_frontend.Models
 @using static System.Net.WebRequestMethods
 @using System.Net.Http.Json
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+@using blazor_frontend.Components
+
+
+
+<PageTitle>Championship creation</PageTitle>
 
 <div class="row">
     <div class="col-lg-8">
@@ -43,7 +49,17 @@
 
     protected async Task CreateChampionship()
     {
-        var response = await Http.PostAsJsonAsync("https://localhost:7068/Championships", championship);
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
+        string tokenVal = TokenHelper.ConvertToken(token);
+
+        var request = new HttpRequestMessage(HttpMethod.Post, "https://localhost:7068/Championships")
+        {
+            Content = JsonContent.Create(championship)
+        };
+
+        request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
+
+        var response = await Http.SendAsync(request);
 
         if (response.IsSuccessStatusCode)
         {

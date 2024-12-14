@@ -82,7 +82,7 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = Roles.Admin)]
         public async Task<IActionResult> Create(int championshipId, [FromBody] TournamentDto tournament)
         {
             var champ = await _context.Championships.FindAsync(championshipId);
@@ -90,8 +90,7 @@ namespace esports.Controllers
             {
                 return NotFound();
             }
-
-            tournament.ChampionshipId = championshipId;
+            
 
 
             if (ModelState.IsValid)
@@ -130,7 +129,7 @@ namespace esports.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = Roles.Admin)]
         public async Task<IActionResult> Edit(int championshipId, int id, [FromBody] TournamentDto tournament)
         {
             var tournamentDbObj = await _context.Tournaments.FindAsync(id);
@@ -171,7 +170,7 @@ namespace esports.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = Roles.Admin)]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

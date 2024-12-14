@@ -13,9 +13,8 @@ namespace esports.Models
 
         // Foreign key to Championship
         public int? ChampionshipId { get; set; }
-
-        // Navigation property to Championship
         public Championship? Championship { get; set; }
+                
 
         public bool IsValid()
         {
