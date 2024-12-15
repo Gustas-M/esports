@@ -1,9 +1,10 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:35792ea4ad1db051981f62b313f1be3b46b1f45cadbaa3c288cd0d3056eefb83 AS build-env
-WORKDIR /App
-
-# Copy everything
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /app
 COPY blazor-frontend .
-# Restore as distinct layers
-RUN dotnet restore
-# Build and publish a release
-RUN dotnet publish -c Release -o out
+RUN dotnet publish -c Release -o /app/publish
+
+FROM nginx:alpine AS final
+WORKDIR /usr/share/nginx/html
+COPY --from=build /app/publish/wwwroot .
+EXPOSE 80
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
