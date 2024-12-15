@@ -51,7 +51,7 @@
         var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
         string tokenVal = TokenHelper.ConvertToken(token);
 
-        var request = new HttpRequestMessage(HttpMethod.Put, $"https://localhost:7068/Teams/{id}")
+        var request = new HttpRequestMessage(HttpMethod.Put, $"https://walrus-app-irwkx.ondigitalocean.app/Teams/{id}")
             {
                 Content = JsonContent.Create(teamData)
             };

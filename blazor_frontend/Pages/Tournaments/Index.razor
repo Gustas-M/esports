@@ -60,7 +60,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        tournaments = await Http.GetFromJsonAsync<List<Tournament>>($"https://localhost:7068/Championships/{id}/Tournaments");
+        tournaments = await Http.GetFromJsonAsync<List<Tournament>>($"https://walrus-app-irwkx.ondigitalocean.app/Championships/{id}/Tournaments");
         tournaments.OrderBy(t => t.Id);
     }
 

@@ -41,7 +41,7 @@
 
     protected async Task LoginUser()
     {
-        var response = await Http.PostAsJsonAsync("https://localhost:7068/api/login", loginDto);
+        var response = await Http.PostAsJsonAsync("https://walrus-app-irwkx.ondigitalocean.app/api/login", loginDto);
 
         if (response.IsSuccessStatusCode)
         {

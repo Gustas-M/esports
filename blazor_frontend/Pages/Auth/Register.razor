@@ -48,7 +48,7 @@
     protected async Task RegisterUser()
     {
 
-        var response = await Http.PostAsJsonAsync("https://localhost:7068/api/register", registerDto);
+        var response = await Http.PostAsJsonAsync("https://walrus-app-irwkx.ondigitalocean.app/api/register", registerDto);
 
         if (response.IsSuccessStatusCode)
         {

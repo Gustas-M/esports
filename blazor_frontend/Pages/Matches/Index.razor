@@ -67,7 +67,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        matches = await Http.GetFromJsonAsync<List<Match>>($"https://localhost:7068/Championships/{champId}/Tournaments/{id}/Matches");        
+        matches = await Http.GetFromJsonAsync<List<Match>>($"https://walrus-app-irwkx.ondigitalocean.app/Championships/{champId}/Tournaments/{id}/Matches");
     }
 
     private async void OnDeleteDialogClose(bool isDelete)
