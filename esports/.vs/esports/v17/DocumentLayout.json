@@ -3,10 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\gusta\\Desktop\\esports\\esports\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}|..\\blazor_frontend\\blazor_frontend.csproj|c:\\users\\gusta\\desktop\\esports\\blazor_frontend\\blazor_frontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}|..\\blazor_frontend\\blazor_frontend.csproj|c:\\users\\gusta\\desktop\\esports\\blazor_frontend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}|..\\blazor_frontend\\blazor_frontend.csproj|c:\\users\\gusta\\desktop\\esports\\blazor_frontend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3752FC4A-19CB-43E4-BE77-022CA8E2DB1F}|docker-compose.dcproj|c:\\users\\gusta\\desktop\\esports\\esports\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3752FC4A-19CB-43E4-BE77-022CA8E2DB1F}|docker-compose.dcproj|solutionrelative:launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}|..\\blazor_frontend\\blazor_frontend.csproj|c:\\users\\gusta\\desktop\\esports\\blazor_frontend\\blazor_frontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}|..\\blazor_frontend\\blazor_frontend.csproj|c:\\users\\gusta\\desktop\\esports\\blazor_frontend\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
@@ -226,10 +230,6 @@
       "RelativeMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|solutionrelative:esports\\auth\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3752FC4A-19CB-43E4-BE77-022CA8E2DB1F}|docker-compose.dcproj|c:\\users\\gusta\\desktop\\esports\\esports\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3752FC4A-19CB-43E4-BE77-022CA8E2DB1F}|docker-compose.dcproj|solutionrelative:launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gustas\\AppData\\Local\\Temp\\.vsdbgsrc\\1cc6d2a634203e0de348b5980fee97b87977d5074b436e24ff974f8438968be4\\ActionMethodExecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -381,7 +381,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -389,32 +389,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Match.cs",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Models\\Match.cs",
-              "RelativeDocumentMoniker": "..\\blazor_frontend\\Models\\Match.cs",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Models\\Match.cs",
-              "RelativeToolTip": "..\\blazor_frontend\\Models\\Match.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T14:30:57.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Properties\\launchSettings.json",
               "RelativeToolTip": "..\\blazor_frontend\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-15T14:28:07.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\_Imports.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\_Imports.razor",
@@ -426,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Layout\\NavMenu.razor",
@@ -438,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Components\\UserService.cs",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Components\\UserService.cs",
@@ -450,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TokenHelper.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Components\\TokenHelper.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Components\\TokenHelper.razor",
@@ -462,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "blazor_frontend.csproj",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\blazor_frontend.csproj",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\blazor_frontend.csproj",
@@ -475,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\appsettings.json",
               "RelativeDocumentMoniker": "esports\\appsettings.json",
@@ -487,7 +475,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\launchSettings.json",
+              "RelativeDocumentMoniker": "launchSettings.json",
+              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\launchSettings.json",
+              "RelativeToolTip": "launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-04T19:58:39.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "..\\blazor_frontend\\Models\\Match.cs",
+              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Models\\Match.cs",
+              "RelativeToolTip": "..\\blazor_frontend\\Models\\Match.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:30:57.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\App.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\App.razor",
@@ -499,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Models\\RegisterDto.cs",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Models\\RegisterDto.cs",
@@ -511,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Team.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Models\\Team.cs",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Models\\Team.cs",
@@ -523,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Models\\User.cs",
@@ -547,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Create.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Championships\\Create.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Championships\\Create.razor",
@@ -559,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Teams\\Index.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Teams\\Index.razor",
@@ -571,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Edit.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Teams\\Edit.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Teams\\Edit.razor",
@@ -583,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Create.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Teams\\Create.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Teams\\Create.razor",
@@ -595,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TournamentDto.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Models\\TournamentDto.cs",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Models\\TournamentDto.cs",
@@ -607,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Matches\\Index.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Matches\\Index.razor",
@@ -619,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Edit.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Matches\\Edit.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Matches\\Edit.razor",
@@ -631,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Program.cs",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Program.cs",
@@ -643,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Create.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Matches\\Create.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Matches\\Create.razor",
@@ -655,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Register.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Auth\\Register.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Auth\\Register.razor",
@@ -667,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Auth\\Login.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Auth\\Login.razor",
@@ -679,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Championships\\Index.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Championships\\Index.razor",
@@ -691,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Edit.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Championships\\Edit.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Championships\\Edit.razor",
@@ -703,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Create.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Tournaments\\Create.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Tournaments\\Create.razor",
@@ -715,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Edit.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Tournaments\\Edit.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Tournaments\\Edit.razor",
@@ -727,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Tournaments\\Index.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Tournaments\\Index.razor",
@@ -739,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Layout\\MainLayout.razor",
@@ -751,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "esports\\Properties\\launchSettings.json",
@@ -763,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "MatchesController.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Controllers\\MatchesController.cs",
               "RelativeDocumentMoniker": "esports\\Controllers\\MatchesController.cs",
@@ -775,7 +788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "TeamsController.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Controllers\\TeamsController.cs",
               "RelativeDocumentMoniker": "esports\\Controllers\\TeamsController.cs",
@@ -787,7 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Program.cs",
               "RelativeDocumentMoniker": "esports\\Program.cs",
@@ -799,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "EsportsContext.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Data\\EsportsContext.cs",
               "RelativeDocumentMoniker": "esports\\Data\\EsportsContext.cs",
@@ -811,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Dockerfile",
               "RelativeDocumentMoniker": "esports\\Dockerfile",
@@ -823,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "bootstrap.min.css",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
@@ -835,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Auth\\AuthController.cs",
               "RelativeDocumentMoniker": "esports\\Auth\\AuthController.cs",
@@ -847,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Home.razor",
@@ -859,7 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\wwwroot\\css\\app.css",
@@ -871,7 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\wwwroot\\index.html",
@@ -883,7 +896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Tournament.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Models\\Tournament.cs",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Models\\Tournament.cs",
@@ -895,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Counter.razor",
@@ -907,7 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "Weather.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\Pages\\Weather.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\Pages\\Weather.razor",
@@ -943,7 +956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Create.razor",
               "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Tournaments\\Create.razor",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Tournaments\\Create.razor",
@@ -978,7 +991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "TournamentsController.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Controllers\\TournamentsController.cs",
               "RelativeDocumentMoniker": "esports\\Controllers\\TournamentsController.cs",
@@ -1098,7 +1111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "ChampionshipsController.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Controllers\\ChampionshipsController.cs",
               "RelativeDocumentMoniker": "esports\\Controllers\\ChampionshipsController.cs",
@@ -1110,7 +1123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "AuthSeeder.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Data\\AuthSeeder.cs",
               "RelativeDocumentMoniker": "esports\\Data\\AuthSeeder.cs",
@@ -1302,7 +1315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "MatchDto.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\MatchDto.cs",
               "RelativeDocumentMoniker": "esports\\Models\\MatchDto.cs",
@@ -1314,7 +1327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "Tournament.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\Tournament.cs",
               "RelativeDocumentMoniker": "esports\\Models\\Tournament.cs",
@@ -1326,7 +1339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "esports.csproj",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\esports.csproj",
               "RelativeDocumentMoniker": "esports\\esports.csproj",
@@ -1334,12 +1347,11 @@
               "RelativeToolTip": "esports\\esports.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-05T15:55:27.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T15:55:27.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "Match.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\Match.cs",
               "RelativeDocumentMoniker": "esports\\Models\\Match.cs",
@@ -1351,7 +1363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "ChampionshipDto.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\ChampionshipDto.cs",
               "RelativeDocumentMoniker": "esports\\Models\\ChampionshipDto.cs",
@@ -1363,7 +1375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "TournamentDto.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\TournamentDto.cs",
               "RelativeDocumentMoniker": "esports\\Models\\TournamentDto.cs",
@@ -1375,7 +1387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "Championship.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\Championship.cs",
               "RelativeDocumentMoniker": "esports\\Models\\Championship.cs",
@@ -1387,7 +1399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "Team.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\Team.cs",
               "RelativeDocumentMoniker": "esports\\Models\\Team.cs",
@@ -1399,7 +1411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "TeamDto.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\TeamDto.cs",
               "RelativeDocumentMoniker": "esports\\Models\\TeamDto.cs",
@@ -1459,7 +1471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\User.cs",
               "RelativeDocumentMoniker": "esports\\Models\\User.cs",
@@ -1504,7 +1516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "SessionService.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Auth\\SessionService.cs",
               "RelativeDocumentMoniker": "esports\\Auth\\SessionService.cs",
@@ -1516,7 +1528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "Migrations.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Data\\Migrations.cs",
               "RelativeDocumentMoniker": "esports\\Data\\Migrations.cs",
@@ -1528,7 +1540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "esports\\Models\\ErrorViewModel.cs",
@@ -1540,7 +1552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Models\\Roles.cs",
               "RelativeDocumentMoniker": "esports\\Models\\Roles.cs",
@@ -1552,7 +1564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Auth\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "esports\\Auth\\JwtTokenService.cs",
@@ -1564,7 +1576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "esports\\Controllers\\HomeController.cs",
@@ -1636,7 +1648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "ConfiguredValueTaskAwaitable.cs",
               "DocumentMoniker": "C:\\Users\\Gustas\\AppData\\Local\\Temp\\.vsdbgsrc\\5323fdc2f02caf83e862ade48ccd883650979fbb42145b0405c0e2c000539b41\\ConfiguredValueTaskAwaitable.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Gustas\\AppData\\Local\\Temp\\.vsdbgsrc\\5323fdc2f02caf83e862ade48ccd883650979fbb42145b0405c0e2c000539b41\\ConfiguredValueTaskAwaitable.cs",
@@ -1648,7 +1660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Auth\\Session.cs",
               "RelativeDocumentMoniker": "esports\\Auth\\Session.cs",
@@ -1657,18 +1669,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T15:24:51.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\launchSettings.json",
-              "RelativeDocumentMoniker": "launchSettings.json",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\launchSettings.json",
-              "RelativeToolTip": "launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-04T19:58:39.778Z"
             },
             {
               "$type": "Document",
@@ -1691,8 +1691,7 @@
               "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\esports.csproj",
               "RelativeToolTip": "esports\\esports.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-13T20:59:05.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T20:59:05.415Z"
             },
             {
               "$type": "Document",
@@ -1740,8 +1739,7 @@
               "RelativeToolTip": "docker-compose.dcproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-04T19:58:09.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:58:09.328Z"
             }
           ]
         }
