@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\gusta\\Desktop\\esports\\esports\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}|..\\blazor_frontend\\blazor_frontend.csproj|c:\\users\\gusta\\desktop\\esports\\blazor_frontend\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}|..\\blazor_frontend\\blazor_frontend.csproj|c:\\users\\gusta\\desktop\\esports\\blazor_frontend\\blazor_frontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}|..\\blazor_frontend\\blazor_frontend.csproj|c:\\users\\gusta\\desktop\\esports\\blazor_frontend\\blazor_frontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{F22D7AE2-CF08-4DF4-AA12-75649B58E01B}|..\\blazor_frontend\\blazor_frontend.csproj|c:\\users\\gusta\\desktop\\esports\\blazor_frontend\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\esports\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -381,7 +381,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -393,8 +393,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Models\\Match.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T14:30:57.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-15T14:30:57.593Z"
             },
             {
               "$type": "Document",
@@ -406,8 +405,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-15T14:28:07.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-15T14:28:07.34Z"
             },
             {
               "$type": "Document",
@@ -419,8 +417,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-07T02:41:08.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T02:41:08.408Z"
             },
             {
               "$type": "Document",
@@ -432,8 +429,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-07T02:41:16.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T02:41:16.207Z"
             },
             {
               "$type": "Document",
@@ -445,8 +441,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Components\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T12:43:12.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T12:43:12.521Z"
             },
             {
               "$type": "Document",
@@ -458,12 +453,11 @@
               "RelativeToolTip": "..\\blazor_frontend\\Components\\TokenHelper.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T10:59:23.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T10:59:23.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "blazor_frontend.csproj",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\blazor_frontend.csproj",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\blazor_frontend.csproj",
@@ -484,12 +478,11 @@
               "RelativeToolTip": "esports\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAADYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-07T13:51:41.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T13:51:41.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\App.razor",
               "RelativeDocumentMoniker": "..\\blazor_frontend\\App.razor",
@@ -501,6 +494,10 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "RegisterDto.cs",
@@ -510,8 +507,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Models\\RegisterDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T02:33:53.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T02:33:53.779Z"
             },
             {
               "$type": "Document",
@@ -523,8 +519,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Models\\Team.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T14:30:56.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-15T14:30:56.098Z"
             },
             {
               "$type": "Document",
@@ -536,8 +531,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T14:30:53.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-15T14:30:53.879Z"
             },
             {
               "$type": "Document",
@@ -549,8 +543,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-15T14:30:29.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-15T14:30:29.724Z"
             },
             {
               "$type": "Document",
@@ -610,8 +603,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Models\\TournamentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T13:30:20.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T13:30:20.557Z"
             },
             {
               "$type": "Document",
@@ -647,8 +639,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T02:41:06.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T02:41:06.862Z"
             },
             {
               "$type": "Document",
@@ -684,8 +675,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Pages\\Auth\\Login.razor",
               "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-07T02:23:21.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T02:23:21.961Z"
             },
             {
               "$type": "Document",
@@ -710,10 +700,6 @@
               "ViewState": "AgIAACEAAAAAAAAAAAAAAD4AAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-07T10:52:42.801Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
