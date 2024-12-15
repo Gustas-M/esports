@@ -379,8 +379,7 @@
               "RelativeToolTip": "esports\\Controllers\\TeamsController.cs",
               "ViewState": "AgIAAJgAAAAAAAAAAAASwLkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T14:37:17.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T14:37:17.076Z"
             },
             {
               "$type": "Document",
@@ -392,8 +391,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Pages\\Championships\\Index.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-07T01:53:19.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T01:53:19.557Z"
             },
             {
               "$type": "Document",
@@ -405,8 +403,7 @@
               "RelativeToolTip": "esports\\Controllers\\MatchesController.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAqwN0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:23:05.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T18:23:05.482Z"
             },
             {
               "$type": "Document",
@@ -418,8 +415,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Pages\\Tournaments\\Edit.razor",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-07T18:16:33.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T18:16:33.074Z"
             },
             {
               "$type": "Document",
@@ -431,8 +427,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Pages\\Matches\\Edit.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T13:45:48.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T13:45:48.967Z"
             },
             {
               "$type": "Document",
@@ -457,8 +452,7 @@
               "RelativeToolTip": "esports\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-05T20:30:57.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:30:57.944Z"
             },
             {
               "$type": "Document",
@@ -470,8 +464,7 @@
               "RelativeToolTip": "esports\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:58:45.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T19:58:45.041Z"
             },
             {
               "$type": "Document",
@@ -483,8 +476,7 @@
               "RelativeToolTip": "esports\\Data\\EsportsContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T20:19:48.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-04T20:19:48.1Z"
             },
             {
               "$type": "Document",
@@ -496,8 +488,7 @@
               "RelativeToolTip": "esports\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-15T12:42:43.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-15T12:42:43.06Z"
             },
             {
               "$type": "Document",
@@ -509,8 +500,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Pages\\Teams\\Index.razor",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T13:46:02.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T13:46:02.608Z"
             },
             {
               "$type": "Document",
@@ -522,8 +512,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Pages\\Teams\\Edit.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T13:46:00.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T13:46:00.557Z"
             },
             {
               "$type": "Document",
@@ -535,8 +524,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Pages\\Tournaments\\Create.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-07T15:12:39.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T15:12:39.963Z"
             },
             {
               "$type": "Document",
@@ -548,8 +536,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Pages\\Matches\\Create.razor",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T13:45:54.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T13:45:54.954Z"
             },
             {
               "$type": "Document",
@@ -561,8 +548,7 @@
               "RelativeToolTip": "..\\blazor_frontend\\Pages\\Teams\\Create.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T13:45:58.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T13:45:58.332Z"
             },
             {
               "$type": "Document",
@@ -610,8 +596,7 @@
               "RelativeToolTip": "esports\\Auth\\AuthController.cs",
               "ViewState": "AgIAAIMAAAAAAAAAAAAAAKIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T15:57:44.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T15:57:44.999Z"
             },
             {
               "$type": "Document",

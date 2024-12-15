@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("blazor_frontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+491f4f9cdb481fc1cb47994a4b44a5ea6095531e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+489a307624d8c644d01ae3443d1c2532440a8d0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("blazor_frontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blazor_frontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
