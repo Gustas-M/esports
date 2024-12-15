@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
-COPY blazor-frontend .
+COPY blazor_frontend .
 RUN dotnet publish -c Release -o /app/publish
 
 FROM nginx:alpine AS final
