@@ -96,7 +96,7 @@
     {
         try
         {
-            championship = await Http.GetFromJsonAsync<Championship>($"https://localhost:7068/Championships/{id}");
+            championship = await Http.GetFromJsonAsync<Championship>($"https://walrus-app-irwkx.ondigitalocean.app/Championships/{id}");
             champData.Name = championship?.Name ?? "";
             champData.Year = championship?.Year ?? 0;
              

@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\auth\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\auth\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\teams\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\teams\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\teams\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\teams\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\teams\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\teams\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\matches\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\matches\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\matches\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\matches\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\matches\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\matches\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\championships\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,24 +39,12 @@
       "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\championships\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\matches\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\matches\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\matches\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\matches\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\matches\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\matches\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\teams\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\teams\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\teams\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\teams\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|c:\\users\\gustas\\desktop\\esports\\esports\\blazor_frontend\\pages\\auth\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367A502E-6389-4E55-B2F8-A3130C25FAEE}|blazor_frontend\\blazor_frontend.csproj|solutionrelative:blazor_frontend\\pages\\auth\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,24 +54,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.razor",
-              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Auth\\Register.razor",
-              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Auth\\Register.razor",
-              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Auth\\Register.razor",
-              "RelativeToolTip": "blazor_frontend\\Pages\\Auth\\Register.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Edit.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Teams\\Edit.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Edit.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Teams\\Edit.razor",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFgAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:10:02.956Z",
+              "WhenOpened": "2024-12-15T20:50:09.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Index.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Championships\\Index.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Index.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Championships\\Index.razor",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAFoAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T20:09:55.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Edit.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Championships\\Edit.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Edit.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Championships\\Edit.razor",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAGIAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T20:09:52.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Create.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Matches\\Create.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Create.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Matches\\Create.razor",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T20:09:35.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Edit.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Matches\\Edit.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Edit.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Matches\\Edit.razor",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJAAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T20:09:39.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Index.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Matches\\Index.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Index.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Matches\\Index.razor",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGIAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T20:09:43.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Index.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Teams\\Index.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Index.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Teams\\Index.razor",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T20:09:14.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Create.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Championships\\Create.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Create.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Championships\\Create.razor",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T20:09:49.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Create.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Teams\\Create.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Create.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Teams\\Create.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T20:09:18.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Auth\\Login.razor",
               "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Auth\\Login.razor",
@@ -80,106 +188,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Index.razor",
-              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Championships\\Index.razor",
-              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Index.razor",
-              "RelativeToolTip": "blazor_frontend\\Pages\\Championships\\Index.razor",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Register.razor",
+              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Auth\\Register.razor",
+              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Auth\\Register.razor",
+              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Auth\\Register.razor",
+              "RelativeToolTip": "blazor_frontend\\Pages\\Auth\\Register.razor",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:09:55.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.razor",
-              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Edit.razor",
-              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Championships\\Edit.razor",
-              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Edit.razor",
-              "RelativeToolTip": "blazor_frontend\\Pages\\Championships\\Edit.razor",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:09:52.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.razor",
-              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Create.razor",
-              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Championships\\Create.razor",
-              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Championships\\Create.razor",
-              "RelativeToolTip": "blazor_frontend\\Pages\\Championships\\Create.razor",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:09:49.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Index.razor",
-              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Matches\\Index.razor",
-              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Index.razor",
-              "RelativeToolTip": "blazor_frontend\\Pages\\Matches\\Index.razor",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:09:43.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Edit.razor",
-              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Edit.razor",
-              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Matches\\Edit.razor",
-              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Edit.razor",
-              "RelativeToolTip": "blazor_frontend\\Pages\\Matches\\Edit.razor",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:09:39.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.razor",
-              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Create.razor",
-              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Matches\\Create.razor",
-              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Matches\\Create.razor",
-              "RelativeToolTip": "blazor_frontend\\Pages\\Matches\\Create.razor",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:09:35.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Create.razor",
-              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Create.razor",
-              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Teams\\Create.razor",
-              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Create.razor",
-              "RelativeToolTip": "blazor_frontend\\Pages\\Teams\\Create.razor",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:09:18.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Index.razor",
-              "RelativeDocumentMoniker": "blazor_frontend\\Pages\\Teams\\Index.razor",
-              "ToolTip": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\Pages\\Teams\\Index.razor",
-              "RelativeToolTip": "blazor_frontend\\Pages\\Teams\\Index.razor",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADQAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T20:09:14.242Z",
+              "WhenOpened": "2024-12-15T20:10:02.956Z",
               "EditorCaption": ""
             },
             {

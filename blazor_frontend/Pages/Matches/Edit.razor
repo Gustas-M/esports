@@ -141,8 +141,8 @@
     {
         try
         {
-            match = await Http.GetFromJsonAsync<Match>($"https://localhost:7068/Championships/{champId}/Tournaments/{tournamentId}/Matches/{id}");
-            teams = await Http.GetFromJsonAsync<List<Team>>("https://localhost:7068/Teams");
+            match = await Http.GetFromJsonAsync<Match>($"https://walrus-app-irwkx.ondigitalocean.app/Championships/{champId}/Tournaments/{tournamentId}/Matches/{id}");
+            teams = await Http.GetFromJsonAsync<List<Team>>("https://walrus-app-irwkx.ondigitalocean.app/Teams");
             matchData.Round_Number = match?.Round_Number ?? 0;
             matchData.Match_In_Round_Number = match?.Match_In_Round_Number ?? 0;
             matchData.FirstTeamId = match?.FirstTeamId ?? 0;

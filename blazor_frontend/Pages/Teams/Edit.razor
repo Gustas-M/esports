@@ -86,7 +86,7 @@
     {
         try
         {
-            team = await Http.GetFromJsonAsync<Team>($"https://localhost:7068/Teams/{id}");
+            team = await Http.GetFromJsonAsync<Team>($"https://walrus-app-irwkx.ondigitalocean.app/Teams/{id}");
             teamData.Name = team?.Name ?? "";            
 
         }

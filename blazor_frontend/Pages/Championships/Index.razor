@@ -88,7 +88,7 @@ else
 
         string tokenVal = TokenHelper.ConvertToken(token);
         // var respone = await Http.DeleteAsync($"https:localhost:7068/Championships/{championship.Id}");
-        var request = new HttpRequestMessage(HttpMethod.Delete, $"https://localhost:7068/Championships/{championship.Id}");
+        var request = new HttpRequestMessage(HttpMethod.Delete, $"https://walrus-app-irwkx.ondigitalocean.app/Championships/{championship.Id}");
         request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
 
         var response = await Http.SendAsync(request);
