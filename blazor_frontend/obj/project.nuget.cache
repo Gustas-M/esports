@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zKoRxymMK6g=",
+  "dgSpecHash": "5hF5N/Nwc7Q=",
   "success": true,
   "projectFilePath": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\blazor_frontend.csproj",
   "expectedPackageFiles": [
@@ -34,11 +34,11 @@
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.jsinterop\\8.0.8\\microsoft.jsinterop.8.0.8.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.8\\microsoft.jsinterop.webassembly.8.0.8.nupkg.sha512",
-    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.8\\microsoft.net.sdk.webassembly.pack.8.0.8.nupkg.sha512",
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.11\\microsoft.net.sdk.webassembly.pack.8.0.11.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.8.nupkg.sha512"
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.11.nupkg.sha512"
   ],
   "logs": [
     {

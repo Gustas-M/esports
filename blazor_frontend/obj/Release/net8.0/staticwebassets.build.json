@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cEpnC9BAWiE02bMaWN2g1jKECF84naVUvEnBbi8pGFg=",
+  "Hash": "Dh4nDFV8H4lV/IuCiwglTUD9Udn4iq7D7pS6qGkDUDE=",
   "Source": "blazor_frontend",
   "BasePath": "/",
   "Mode": "Root",
@@ -1021,7 +1021,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.js"
+      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\runtimes\\browser-wasm\\native\\dotnet.js"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
@@ -1040,15 +1040,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.js.map"
+      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\runtimes\\browser-wasm\\native\\dotnet.js.map"
     },
     {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.8.s9c05hkb82.js",
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.11.iuc2y6b617.js",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.8.s9c05hkb82.js",
+      "RelativePath": "_framework/dotnet.native.8.0.11.iuc2y6b617.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1059,7 +1059,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.native.js"
+      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\runtimes\\browser-wasm\\native\\dotnet.native.js"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
@@ -1078,15 +1078,15 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
+      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
     },
     {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.8.dzrntlty0k.js",
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.11.wvdme4ehd2.js",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.8.dzrntlty0k.js",
+      "RelativePath": "_framework/dotnet.runtime.8.0.11.wvdme4ehd2.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1097,7 +1097,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
+      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
@@ -1116,7 +1116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
+      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\EntityFramework.SqlServer.wasm",
@@ -1173,7 +1173,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
@@ -1192,7 +1192,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
@@ -1211,7 +1211,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\gusta\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.11\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\Microsoft.AspNet.Identity.Core.wasm",
@@ -4938,23 +4938,23 @@
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Security.Cryptography.OpenSsl.wasm"
     },
     {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\0o96iefvmr.gz",
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\0obcvnoj1u.gz",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/icudt_CJK.dat.gz",
+      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
+      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\0pa02ethvi.gz",
@@ -5069,6 +5069,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Security.Cryptography.Primitives.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\1lpw5p11op.gz",
+      "SourceId": "blazor_frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\1ripe1m2nw.gz",
@@ -5394,25 +5413,6 @@
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Reflection.Emit.ILGeneration.wasm"
     },
     {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\4342uik4ll.gz",
-      "SourceId": "blazor_frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
-    },
-    {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\4em9c35hzb.gz",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
@@ -5563,6 +5563,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Numerics.Vectors.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\63znilmky3.gz",
+      "SourceId": "blazor_frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.js"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\64vjxbge2v.gz",
@@ -5964,6 +5983,25 @@
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\netstandard.wasm"
     },
     {
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\8sbhrgi153.gz",
+      "SourceId": "blazor_frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
+    },
+    {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\95qblun32r.gz",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
@@ -6325,6 +6363,25 @@
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Xml.XPath.wasm"
     },
     {
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\cdpflwcnyb.gz",
+      "SourceId": "blazor_frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
+    },
+    {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\cfr1cagw6i.gz",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
@@ -6570,25 +6627,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Security.Cryptography.Csp.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\dzrntlty0k.gz",
-      "SourceId": "blazor_frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.8.dzrntlty0k.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.8.dzrntlty0k.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.8.dzrntlty0k.js"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\dzrxu5w0z1.gz",
@@ -6838,23 +6876,23 @@
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Xml.Serialization.wasm"
     },
     {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\fzjy13g344.gz",
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\g5h9o179od.gz",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
+      "RelativePath": "_framework/icudt_CJK.dat.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
+      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\g9ndh7o653.gz",
@@ -6912,25 +6950,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.IO.FileSystem.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\gmgx0ty9pr.gz",
-      "SourceId": "blazor_frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.wasm.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\h0vtj1lhg4.gz",
@@ -7123,6 +7142,25 @@
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.wasm"
     },
     {
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\iuc2y6b617.gz",
+      "SourceId": "blazor_frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.8.0.11.iuc2y6b617.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.11.iuc2y6b617.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.11.iuc2y6b617.js"
+    },
+    {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\j9xwrhcyyj.gz",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
@@ -7235,25 +7273,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Reflection.TypeExtensions.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\k5k3ewyxzy.gz",
-      "SourceId": "blazor_frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\khappeuc70.gz",
@@ -7712,6 +7731,25 @@
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.IO.MemoryMappedFiles.wasm"
     },
     {
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\pqyn9a6mhb.gz",
+      "SourceId": "blazor_frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
+    },
+    {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\q8shro1rzk.gz",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
@@ -7826,25 +7864,6 @@
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Net.WebSockets.wasm"
     },
     {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\rlidl35muw.gz",
-      "SourceId": "blazor_frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
-    },
-    {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\rmjxvm51od.gz",
       "SourceId": "blazor_frontend",
       "SourceType": "Computed",
@@ -7900,25 +7919,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Private.Xml.Linq.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\s9c05hkb82.gz",
-      "SourceId": "blazor_frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.8.s9c05hkb82.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.8.s9c05hkb82.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.8.s9c05hkb82.js"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\se3krs74d6.gz",
@@ -8166,25 +8166,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.ComponentModel.DataAnnotations.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\tyngxdl9q5.gz",
-      "SourceId": "blazor_frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.js"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\u2fxsq9pns.gz",
@@ -8470,6 +8451,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\System.Diagnostics.Debug.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\wvdme4ehd2.gz",
+      "SourceId": "blazor_frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.8.0.11.wvdme4ehd2.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.11.wvdme4ehd2.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\bin\\Release\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.11.wvdme4ehd2.js"
     },
     {
       "Identity": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\Release\\net8.0\\compressed\\wz6xaxd6kz.gz",
