@@ -102,7 +102,7 @@
         var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
         string tokenVal = TokenHelper.ConvertToken(token);
 
-        var request = new HttpRequestMessage(HttpMethod.Post, $"https://localhost:7068/Championships/{champId}/Tournaments/{tournamentId}/Matches")
+        var request = new HttpRequestMessage(HttpMethod.Post, $"https://walrus-app-irwkx.ondigitalocean.app/Championships/{champId}/Tournaments/{tournamentId}/Matches")
             {
                 Content = JsonContent.Create(match)
             };

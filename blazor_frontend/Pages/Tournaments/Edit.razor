@@ -10,7 +10,7 @@
 
 <div class="row">
     <div class="col-lg-8">
-        <h1 class="mb-5">Edit Championship</h1>
+        <h1 class="mb-5">Edit Tournament</h1>
     
 
     @if (tournament == null)
@@ -96,7 +96,7 @@
     {
         try
         {
-            tournament = await Http.GetFromJsonAsync<Tournament>($"https://localhost:7068/Championships/{champId}/Tournaments/{id}");
+            tournament = await Http.GetFromJsonAsync<Tournament>($"https://walrus-app-irwkx.ondigitalocean.app/Championships/{champId}/Tournaments/{id}");
             tournamentData.Name = tournament?.Name ?? "";
             tournamentData.Number_of_rounds = tournament?.Number_of_rounds ?? 0;
             tournamentData.ChampionshipId = champId;
