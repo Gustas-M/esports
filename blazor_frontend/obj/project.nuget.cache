@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5abDvS1PJD8=",
+  "dgSpecHash": "v4IkT7pwNPU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gustas\\Desktop\\temp\\blazor_frontend\\blazor_frontend\\blazor_frontend.csproj",
+  "projectFilePath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\blazor_frontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gustas\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
     "C:\\Users\\Gustas\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.4\\microsoft.aspnet.identity.core.2.2.4.nupkg.sha512",
@@ -31,7 +31,6 @@
     "C:\\Users\\Gustas\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Gustas\\.nuget\\packages\\microsoft.jsinterop\\8.0.8\\microsoft.jsinterop.8.0.8.nupkg.sha512",
     "C:\\Users\\Gustas\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.8\\microsoft.jsinterop.webassembly.8.0.8.nupkg.sha512",
-    "C:\\Users\\Gustas\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.8\\microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
     "C:\\Users\\Gustas\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.8\\microsoft.net.sdk.webassembly.pack.8.0.8.nupkg.sha512",
     "C:\\Users\\Gustas\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\Gustas\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",

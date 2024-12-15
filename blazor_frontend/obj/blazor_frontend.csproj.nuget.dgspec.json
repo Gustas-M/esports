@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gustas\\Desktop\\temp\\blazor_frontend\\blazor_frontend\\blazor_frontend.csproj": {}
+    "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\blazor_frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gustas\\Desktop\\temp\\blazor_frontend\\blazor_frontend\\blazor_frontend.csproj": {
+    "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\blazor_frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gustas\\Desktop\\temp\\blazor_frontend\\blazor_frontend\\blazor_frontend.csproj",
+        "projectUniqueName": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\blazor_frontend.csproj",
         "projectName": "blazor_frontend",
-        "projectPath": "C:\\Users\\Gustas\\Desktop\\temp\\blazor_frontend\\blazor_frontend\\blazor_frontend.csproj",
+        "projectPath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\blazor_frontend.csproj",
         "packagesPath": "C:\\Users\\Gustas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gustas\\Desktop\\temp\\blazor_frontend\\blazor_frontend\\obj\\",
+        "outputPath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,12 +62,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.8, )",
-              "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
