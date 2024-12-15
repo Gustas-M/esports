@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\gusta\\Desktop\\esports\\esports\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\esports\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|solutionrelative:esports\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\esports\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|solutionrelative:esports\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\esports\\data\\esportscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|solutionrelative:esports\\data\\esportscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\esports\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|solutionrelative:esports\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBC6B594-B7BE-4621-BE3B-D65231341F26}|esports\\esports.csproj|c:\\users\\gusta\\desktop\\esports\\esports\\esports\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -363,8 +363,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 11,
@@ -427,13 +431,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\appsettings.json",
               "RelativeDocumentMoniker": "esports\\appsettings.json",
               "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\appsettings.json",
               "RelativeToolTip": "esports\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAADYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-07T13:51:41.363Z",
               "EditorCaption": ""
@@ -452,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Program.cs",
               "RelativeDocumentMoniker": "esports\\Program.cs",
@@ -464,24 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Dockerfile",
-              "RelativeDocumentMoniker": "esports\\Dockerfile",
-              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Dockerfile",
-              "RelativeToolTip": "esports\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-15T12:42:43.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "EsportsContext.cs",
               "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Data\\EsportsContext.cs",
               "RelativeDocumentMoniker": "esports\\Data\\EsportsContext.cs",
@@ -490,6 +477,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T20:19:48.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Dockerfile",
+              "RelativeDocumentMoniker": "esports\\Dockerfile",
+              "ToolTip": "C:\\Users\\gusta\\Desktop\\esports\\esports\\esports\\Dockerfile",
+              "RelativeToolTip": "esports\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-15T12:42:43.06Z"
             },
             {
               "$type": "Document",
