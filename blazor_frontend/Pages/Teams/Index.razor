@@ -50,7 +50,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        teams = await Http.GetFromJsonAsync<List<Team>>("https://localhost:7068/Teams");
+        teams = await Http.GetFromJsonAsync<List<Team>>("https://walrus-app-irwkx.ondigitalocean.app/Teams");
     }
 
     private bool DeleteDialogOpen { get; set; }
