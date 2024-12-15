@@ -1,8 +1,6 @@
-
 html, body {
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
-
 
 h1:focus {
     outline: none;
@@ -103,20 +101,3 @@ a, .btn-link {
 code {
     color: #c02d76;
 }
-
-
-.fade-in-text {
-    font-size: 150px;
-    animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-

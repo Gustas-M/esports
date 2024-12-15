@@ -2,252 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Blazored.Modal/7.3.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.2",
-          "Microsoft.AspNetCore.Components.Web": "8.0.2",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "Microsoft.JSInterop.WebAssembly": "8.0.2"
-        },
-        "compile": {
-          "lib/net8.0/Blazored.Modal.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/Blazored.Modal.dll": {}
-        },
-        "build": {
-          "buildTransitive/Blazored.Modal.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Blazored.Modal.props": {}
-        }
-      },
-      "bootstrap/5.3.3": {
-        "type": "package",
-        "contentFiles": {
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.min.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          }
-        }
-      },
       "EntityFramework/6.1.0": {
         "type": "package",
         "compile": {
@@ -396,15 +150,6 @@
         },
         "build": {
           "build/net8.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
-        }
-      },
-      "Microsoft.AspNetCore.Components.WebAssembly.Authentication/9.0.0": {
-        "type": "package",
-        "build": {
-          "buildTransitive/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
         }
       },
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer/8.0.8": {
@@ -726,7 +471,13 @@
           }
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.11": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -792,252 +543,6 @@
       }
     },
     "net8.0/browser-wasm": {
-      "Blazored.Modal/7.3.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.2",
-          "Microsoft.AspNetCore.Components.Web": "8.0.2",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "Microsoft.JSInterop.WebAssembly": "8.0.2"
-        },
-        "compile": {
-          "lib/net8.0/Blazored.Modal.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/Blazored.Modal.dll": {}
-        },
-        "build": {
-          "buildTransitive/Blazored.Modal.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Blazored.Modal.props": {}
-        }
-      },
-      "bootstrap/5.3.3": {
-        "type": "package",
-        "contentFiles": {
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.min.js": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          }
-        }
-      },
       "EntityFramework/6.1.0": {
         "type": "package",
         "compile": {
@@ -1186,15 +691,6 @@
         },
         "build": {
           "build/net8.0/Microsoft.AspNetCore.Components.WebAssembly.props": {}
-        }
-      },
-      "Microsoft.AspNetCore.Components.WebAssembly.Authentication/9.0.0": {
-        "type": "package",
-        "build": {
-          "buildTransitive/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props": {}
         }
       },
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer/8.0.8": {
@@ -1516,7 +1012,13 @@
           }
         }
       },
-      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.11": {
+      "Microsoft.NET.ILLink.Tasks/8.0.8": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.8": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.Sdk.WebAssembly.Pack.props": {},
@@ -1577,126 +1079,6 @@
     }
   },
   "libraries": {
-    "Blazored.Modal/7.3.1": {
-      "sha512": "CWUyENSAZmNr0efiS3V5oMBkhRLkqqo1qOaY5pIqymQIR0fgGY6CDB4+57HAJP0pdks95yALrBZ6twggMaIeCg==",
-      "type": "package",
-      "path": "blazored.modal/7.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "blazored.modal.7.3.1.nupkg.sha512",
-        "blazored.modal.nuspec",
-        "build/Blazored.Modal.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/Blazored.Modal.props",
-        "buildTransitive/Blazored.Modal.props",
-        "icon.png",
-        "lib/net8.0/Blazored.Modal.dll",
-        "staticwebassets/Blazored.Modal.bundle.scp.css",
-        "staticwebassets/BlazoredModal.razor.js"
-      ]
-    },
-    "bootstrap/5.3.3": {
-      "sha512": "iQohLXwneNPDyW4x24mKQ90qGwT5WTtNl3KybL0koTluJPjKYxFCU/NTLHsJiWR2n7VmnwcpAgr8TR42KNmPOg==",
-      "type": "package",
-      "path": "bootstrap/5.3.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "bootstrap.5.3.3.nupkg.sha512",
-        "bootstrap.nuspec",
-        "bootstrap.png",
-        "content/Content/bootstrap-grid.css",
-        "content/Content/bootstrap-grid.css.map",
-        "content/Content/bootstrap-grid.min.css",
-        "content/Content/bootstrap-grid.min.css.map",
-        "content/Content/bootstrap-grid.rtl.css",
-        "content/Content/bootstrap-grid.rtl.css.map",
-        "content/Content/bootstrap-grid.rtl.min.css",
-        "content/Content/bootstrap-grid.rtl.min.css.map",
-        "content/Content/bootstrap-reboot.css",
-        "content/Content/bootstrap-reboot.css.map",
-        "content/Content/bootstrap-reboot.min.css",
-        "content/Content/bootstrap-reboot.min.css.map",
-        "content/Content/bootstrap-reboot.rtl.css",
-        "content/Content/bootstrap-reboot.rtl.css.map",
-        "content/Content/bootstrap-reboot.rtl.min.css",
-        "content/Content/bootstrap-reboot.rtl.min.css.map",
-        "content/Content/bootstrap-utilities.css",
-        "content/Content/bootstrap-utilities.css.map",
-        "content/Content/bootstrap-utilities.min.css",
-        "content/Content/bootstrap-utilities.min.css.map",
-        "content/Content/bootstrap-utilities.rtl.css",
-        "content/Content/bootstrap-utilities.rtl.css.map",
-        "content/Content/bootstrap-utilities.rtl.min.css",
-        "content/Content/bootstrap-utilities.rtl.min.css.map",
-        "content/Content/bootstrap.css",
-        "content/Content/bootstrap.css.map",
-        "content/Content/bootstrap.min.css",
-        "content/Content/bootstrap.min.css.map",
-        "content/Content/bootstrap.rtl.css",
-        "content/Content/bootstrap.rtl.css.map",
-        "content/Content/bootstrap.rtl.min.css",
-        "content/Content/bootstrap.rtl.min.css.map",
-        "content/Scripts/bootstrap.bundle.js",
-        "content/Scripts/bootstrap.bundle.js.map",
-        "content/Scripts/bootstrap.bundle.min.js",
-        "content/Scripts/bootstrap.bundle.min.js.map",
-        "content/Scripts/bootstrap.esm.js",
-        "content/Scripts/bootstrap.esm.js.map",
-        "content/Scripts/bootstrap.esm.min.js",
-        "content/Scripts/bootstrap.esm.min.js.map",
-        "content/Scripts/bootstrap.js",
-        "content/Scripts/bootstrap.js.map",
-        "content/Scripts/bootstrap.min.js",
-        "content/Scripts/bootstrap.min.js.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap.min.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css.map",
-        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css",
-        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.esm.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.esm.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.js.map",
-        "contentFiles/any/any/wwwroot/js/bootstrap.min.js",
-        "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map"
-      ]
-    },
     "EntityFramework/6.1.0": {
       "sha512": "u/M0OEfqxTUsL5BwzD66eBGm278/ozqdLK3JvMO6QwUxxc+z7ZUkTYm4suDhWRqzkc6mOhvXDQY5dZUwbldxyQ==",
       "type": "package",
@@ -1848,27 +1230,6 @@
         "lib/net8.0/Microsoft.AspNetCore.Components.WebAssembly.xml",
         "microsoft.aspnetcore.components.webassembly.8.0.8.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Components.WebAssembly.Authentication/9.0.0": {
-      "sha512": "dWGMHCh3/MchcPTvwz8FBd5O1FBE3Dxq6wWayi2xypgADJDTmpQnmMedN90sNVfekXQheAofYh0aPv6+Rt8Zlw==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.components.webassembly.authentication/9.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.txt",
-        "build/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props",
-        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props",
-        "buildTransitive/Microsoft.AspNetCore.Components.WebAssembly.Authentication.props",
-        "lib/net9.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
-        "lib/net9.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.xml",
-        "microsoft.aspnetcore.components.webassembly.authentication.9.0.0.nupkg.sha512",
-        "microsoft.aspnetcore.components.webassembly.authentication.nuspec",
-        "staticwebassets/AuthenticationService.js"
       ]
     },
     "Microsoft.AspNetCore.Components.WebAssembly.DevServer/8.0.8": {
@@ -2584,10 +1945,61 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
-    "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.11": {
-      "sha512": "apyq1nlpnHG64NVs1RpgUJAxM73bu5fLFB/SsIcYYiLKdUxiIMPQQWr9ysRxfJRLlKwLSoJo6LmjhjS9sxC8eg==",
+    "Microsoft.NET.ILLink.Tasks/8.0.8": {
+      "sha512": "P8wR6MUWwYXIjPJuBaZgo5zlI/GWI6QEAo6NyVIbPefa9CCkohYu7dP2rD/mrqnjEqfRHyl+h9VZrDoGpELqYg==",
       "type": "package",
-      "path": "microsoft.net.sdk.webassembly.pack/8.0.11",
+      "path": "microsoft.net.illink.tasks/8.0.8",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "Sdk/Sdk.props",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
+        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
+        "build/Microsoft.NET.ILLink.Analyzers.props",
+        "build/Microsoft.NET.ILLink.Tasks.props",
+        "build/Microsoft.NET.ILLink.targets",
+        "microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
+        "microsoft.net.illink.tasks.nuspec",
+        "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/ILLink.Tasks.dll.config",
+        "tools/net472/Mono.Cecil.Mdb.dll",
+        "tools/net472/Mono.Cecil.Pdb.dll",
+        "tools/net472/Mono.Cecil.Rocks.dll",
+        "tools/net472/Mono.Cecil.dll",
+        "tools/net472/Sdk/Sdk.props",
+        "tools/net472/System.Buffers.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/System.Memory.dll",
+        "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net472/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/ILLink.Tasks.deps.json",
+        "tools/net8.0/ILLink.Tasks.dll",
+        "tools/net8.0/Mono.Cecil.Mdb.dll",
+        "tools/net8.0/Mono.Cecil.Pdb.dll",
+        "tools/net8.0/Mono.Cecil.Rocks.dll",
+        "tools/net8.0/Mono.Cecil.dll",
+        "tools/net8.0/Sdk/Sdk.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/illink.deps.json",
+        "tools/net8.0/illink.dll",
+        "tools/net8.0/illink.runtimeconfig.json",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.NET.Sdk.WebAssembly.Pack/8.0.8": {
+      "sha512": "z2UxqxjssvxlcQ68KZorgQDITdV2u5H6CWOGhs3kiv+qqDtokhDpcK660TUMrX+FTDdRKie0l7EeZEdej26Ycw==",
+      "type": "package",
+      "path": "microsoft.net.sdk.webassembly.pack/8.0.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2615,7 +2027,7 @@
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.props",
         "build/Microsoft.NET.Sdk.WebAssembly.Pack.targets",
         "build/Wasm.web.config",
-        "microsoft.net.sdk.webassembly.pack.8.0.11.nupkg.sha512",
+        "microsoft.net.sdk.webassembly.pack.8.0.8.nupkg.sha512",
         "microsoft.net.sdk.webassembly.pack.nuspec",
         "tools/net472/Microsoft.Bcl.AsyncInterfaces.dll",
         "tools/net472/Microsoft.Build.dll",
@@ -2794,29 +2206,32 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Blazored.Modal >= 7.3.1",
       "Microsoft.AspNet.Identity.EntityFramework >= 2.2.4",
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.8",
-      "Microsoft.AspNetCore.Components.WebAssembly.Authentication >= 9.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.8",
-      "Microsoft.NET.Sdk.WebAssembly.Pack >= 8.0.11",
-      "bootstrap >= 5.3.3"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8",
+      "Microsoft.NET.Sdk.WebAssembly.Pack >= 8.0.8"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gusta\\.nuget\\packages\\": {}
+    "C:\\Users\\Gustas\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\blazor_frontend.csproj",
+      "projectUniqueName": "C:\\Users\\Gustas\\Desktop\\temp\\blazor_frontend\\blazor_frontend\\blazor_frontend.csproj",
       "projectName": "blazor_frontend",
-      "projectPath": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\blazor_frontend.csproj",
-      "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\",
+      "projectPath": "C:\\Users\\Gustas\\Desktop\\temp\\blazor_frontend\\blazor_frontend\\blazor_frontend.csproj",
+      "packagesPath": "C:\\Users\\Gustas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gustas\\Desktop\\temp\\blazor_frontend\\blazor_frontend\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gustas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2848,10 +2263,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "Blazored.Modal": {
-            "target": "Package",
-            "version": "[7.3.1, )"
-          },
           "Microsoft.AspNet.Identity.EntityFramework": {
             "target": "Package",
             "version": "[2.2.4, )"
@@ -2860,24 +2271,22 @@
             "target": "Package",
             "version": "[8.0.8, )"
           },
-          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
-            "target": "Package",
-            "version": "[9.0.0, )"
-          },
           "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.8, )"
           },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.8, )",
+            "autoReferenced": true
+          },
           "Microsoft.NET.Sdk.WebAssembly.Pack": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.11, )",
+            "version": "[8.0.8, )",
             "autoReferenced": true
-          },
-          "bootstrap": {
-            "target": "Package",
-            "version": "[5.3.3, )"
           }
         },
         "imports": [
@@ -2894,7 +2303,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[8.0.11, 8.0.11]"
+            "version": "[8.0.8, 8.0.8]"
           }
         ],
         "frameworkReferences": {

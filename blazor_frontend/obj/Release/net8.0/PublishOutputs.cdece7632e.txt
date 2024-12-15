@@ -1,1 +1,0 @@
-C:\Users\gusta\Desktop\esports\blazor_frontend\bin\Release\net8.0\publish\web.config
