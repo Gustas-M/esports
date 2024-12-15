@@ -15,7 +15,7 @@
         <div class="row mb-3">
             <label class="col-md-4 col-form-label">Round number</label>
             <div class="col-md-8">
-                <input class="form-control" @bind="match.Round_Number">
+                <input type="number" class="form-control" @bind="match.Round_Number">
                 <span class="text-danger">@Errors["Round_number"]?[0]</span>
             </div>
         </div>
@@ -23,7 +23,7 @@
         <div class="row mb-3">
             <label class="col-md-4 col-form-label">Match number in round</label>
             <div class="col-md-8">
-                <input class="form-control" @bind="match.Match_In_Round_Number">
+                <input type="number" class="form-control" @bind="match.Match_In_Round_Number">
                 <span class="text-danger">@Errors["Match_in_round_number"]?[0]</span>
             </div>
         </div>

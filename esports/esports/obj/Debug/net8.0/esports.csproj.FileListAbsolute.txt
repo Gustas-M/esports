@@ -752,8 +752,6 @@ C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\esports.Assembly
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\esports.csproj.CoreCompileInputs.cache
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\esports.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\esports.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\esports.RazorAssemblyInfo.cache
-C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\esports.RazorAssemblyInfo.cs
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\esports.sourcelink.json
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\staticwebassets.development.json
@@ -762,9 +760,7 @@ C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\staticwebassets\
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.esports.props
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.esports.props
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\scopedcss\bundle\esports.styles.css
-C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\scopedcss\projectbundle\esports.bundle.scp.css
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\esports.csproj.Up2Date
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\esports.dll
 C:\Users\gusta\Desktop\esports\esports\esports\obj\Debug\net8.0\refint\esports.dll
@@ -1034,3 +1030,11 @@ C:\Users\Gustas\Desktop\esports\esports\esports\esports\bin\Debug\net8.0\Microso
 C:\Users\Gustas\Desktop\esports\esports\esports\esports\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\Gustas\Desktop\esports\esports\esports\esports\bin\Debug\net8.0\Microsoft.JSInterop.dll
 C:\Users\Gustas\Desktop\esports\esports\esports\esports\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\gusta\Desktop\esports\esports\esports\bin\Debug\net8.0\Blazored.Modal.dll
+C:\Users\gusta\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\gusta\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\gusta\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\gusta\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\gusta\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\gusta\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\gusta\Desktop\esports\esports\esports\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll

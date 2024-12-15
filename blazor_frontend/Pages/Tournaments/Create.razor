@@ -10,7 +10,7 @@
 
 <div class="row">
     <div class="col-lg-8">
-        <h1 class="mb-5">New Tournaments</h1>
+        <h1 class="mb-5">New Tournament</h1>
 
         <div class="row mb-3">
             <label class="col-md-4 col-form-label">Name</label>
@@ -23,7 +23,7 @@
         <div class="row mb-3">
             <label class="col-md-4 col-form-label">Number of Rounds</label>
             <div class="col-md-8">
-                <input class="form-control" @bind="tournament.Number_of_rounds">
+                <input type="number" class="form-control" @bind="tournament.Number_of_rounds">
                 <span class="text-danger">@Errors["Number_of_rounds"]?[0]</span>
             </div>
         </div>

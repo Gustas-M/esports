@@ -2868,24 +2868,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gustas\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\gusta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\blazor_frontend.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\blazor_frontend.csproj",
       "projectName": "blazor_frontend",
-      "projectPath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\blazor_frontend.csproj",
-      "packagesPath": "C:\\Users\\Gustas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gustas\\Desktop\\esports\\esports\\blazor_frontend\\obj\\",
+      "projectPath": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\blazor_frontend.csproj",
+      "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gusta\\Desktop\\esports\\blazor_frontend\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Gustas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

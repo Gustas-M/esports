@@ -11,7 +11,7 @@
 <div class="row">
     <div class="col-lg-8">
         <h1 class="mb-5">Edit Championship</h1>
-    </div>
+    
 
     @if (tournament == null)
     {
@@ -40,10 +40,11 @@
                 <button class="btn btn-primary" @onclick="UpdateTournament">Submit</button>
             </div>
             <div class="col-md-4 d-grid">
-                <a class="btn btn-secondary" href="/Championships">Cancel</a>
+                <a class="btn btn-secondary" href="/Championships/@id/Tournaments">Cancel</a>
             </div>
         </div>
     }
+    </div>
 </div>
 
 @code {

@@ -61,6 +61,7 @@ namespace esports.Auth
                 }
 
                 var addToRoleResult = await _userManager.AddToRoleAsync(newUser, Roles.User);
+                
 
                 if (!addToRoleResult.Succeeded)
                 {
@@ -159,6 +160,7 @@ namespace esports.Auth
             };
 
             HttpContext.Response.Cookies.Append("refreshToken", newRefreshToken, cookies);
+            
 
             await _sessionService.ExtendSession(sessionIdAsGuid, newRefreshToken, expiresAt);
 

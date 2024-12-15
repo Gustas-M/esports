@@ -12,7 +12,7 @@ using esports.Data;
 namespace esports.Migrations
 {
     [DbContext(typeof(EsportsContext))]
-    [Migration("20241210153843_InitialMigration")]
+    [Migration("20241214105650_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />

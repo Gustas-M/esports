@@ -16,11 +16,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddDbContext<EsportsContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSQL")));
+
+
+/*
 var postgreSqlConnectionString = "Host=localhost;Port=5432;Database=esports;Username=postgres;Password=assword";
 
 builder.Services.AddDbContext<EsportsContext>(options =>
-    options.UseNpgsql(postgreSqlConnectionString)
-);
+    options.UseNpgsql(IConfiguration)
+);*/
 
 builder.Services.AddTransient<JwtTokenService>();
 builder.Services.AddScoped<AuthSeeder>();
@@ -70,6 +75,7 @@ builder.Services.AddBlazoredModal();
 var app = builder.Build();
 using var scope = app.Services.CreateScope();
 var dbContext = scope.ServiceProvider.GetRequiredService<EsportsContext>();
+dbContext.Database.Migrate();
 var dbSeeder = scope.ServiceProvider.GetRequiredService<AuthSeeder>();
 await dbSeeder.SeedAsync();
 

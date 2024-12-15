@@ -130,6 +130,11 @@ namespace esports.Controllers
                 return NotFound();
             }
 
+            if (!HttpContext.User.IsInRole(Roles.Admin) && HttpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub) != teamDbObj.UserId)
+            {
+                return Forbid();
+            }
+
             if (ModelState.IsValid)
             {
                 if (team.IsValid())
@@ -164,11 +169,18 @@ namespace esports.Controllers
                 return NotFound();
             }
 
+
+
             var team = await _context.Teams
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (team == null)
             {
                 return NotFound();
+            }
+
+            if (!HttpContext.User.IsInRole(Roles.Admin) && HttpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub) != team.UserId)
+            {
+                return Forbid();
             }
 
 
