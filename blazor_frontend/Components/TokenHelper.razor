@@ -1,0 +1,16 @@
+﻿@using System.Text.Json
+
+@code {
+    public static string ConvertToken(string jsonToken)
+    {
+        if (jsonToken == null)
+        {
+            return "";
+        }
+
+        var jsonObject = JsonSerializer.Deserialize<JsonElement>(jsonToken);
+        string tokenVal = jsonObject.GetProperty("accessToken").GetString();
+
+        return tokenVal;
+    }
+}

@@ -1,0 +1,109 @@
+﻿@page "/Championships/{id:int}/Edit"
+@using System.Text.Json.Nodes
+@using blazor_frontend.Models
+@using static System.Net.WebRequestMethods
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using blazor_frontend.Components
+
+<PageTitle>Championship editing</PageTitle>
+
+<div class="row">
+    <div class="col-lg-8">
+        <h1 class="mb-5">Edit Championship</h1>
+    </div>
+
+    @if(championship == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Name</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="champData.Name">
+                <span class="text-danger">@Errors["Name"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Year</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="champData.Year">
+                <span class="text-danger">@Errors["Year"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4 col-md-4 d-grid">
+                <button class="btn btn-primary" @onclick="UpdateChampionship">Submit</button>
+            </div>
+            <div class="col-md-4 d-grid">
+                <a class="btn btn-secondary" href="/Championships">Cancel</a>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+    public Championship? championship = null;
+    public ChampionshipDto champData = new ChampionshipDto();
+    public JsonNode Errors = new JsonObject();
+
+    protected async Task UpdateChampionship()
+    {
+        // Retrieve the token from local storage
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
+        string tokenVal = TokenHelper.ConvertToken(token);
+
+        var request = new HttpRequestMessage(HttpMethod.Put, $"https://walrus-app-irwkx.ondigitalocean.app/Championships/{id}")
+        {
+            Content = JsonContent.Create(champData)
+        };
+
+        // Add the authorization header
+        request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
+
+        // Send the request
+        var response = await Http.SendAsync(request);
+        // var response = await Http.PutAsJsonAsync($"https:localhost:7068/Championships/{id}", champData);
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/Championships");
+        }
+        else
+        {
+            var strResponse = await response.Content.ReadAsStringAsync();
+            Console.WriteLine("Json response: \n" + strResponse);
+
+            try
+            {
+                var jsonResponse = JsonNode.Parse(strResponse);
+                Errors = jsonResponse?["errors"] ?? new JsonObject();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        try
+        {
+            championship = await Http.GetFromJsonAsync<Championship>($"https://localhost:7068/Championships/{id}");
+            champData.Name = championship?.Name ?? "";
+            champData.Year = championship?.Year ?? 0;
+             
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+}

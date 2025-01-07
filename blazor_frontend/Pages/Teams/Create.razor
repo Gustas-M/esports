@@ -1,0 +1,72 @@
+﻿@page "/Teams/Create"
+@using System.Text.Json.Nodes
+@using blazor_frontend.Models
+@using static System.Net.WebRequestMethods
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<PageTitle>Team creation</PageTitle>
+
+<div class="row">
+    <div class="col-lg-8">
+        <h1 class="mb-5">New Team</h1>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Name</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="team.Name">
+                <span class="text-danger">@Errors["Name"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4 col-md-4 d-grid">
+                <button class="btn btn-primary" @onclick="CreateTeam">Submit</button>
+            </div>
+            <div class="col-md-4 d-grid">
+                <a class="btn btn-secondary" href="/Teams">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public TeamDto team = new TeamDto();
+    public JsonNode Errors = new JsonObject();
+
+    protected async Task CreateTeam()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
+        string tokenVal = TokenHelper.ConvertToken(token);
+
+        var request = new HttpRequestMessage(HttpMethod.Post, "https://walrus-app-irwkx.ondigitalocean.app/Teams")
+            {
+                Content = JsonContent.Create(team)
+            };
+
+        request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
+
+        var response = await Http.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/Teams");
+        }
+        else
+        {
+            var strResponse = await response.Content.ReadAsStringAsync();
+            Console.WriteLine("Json response: \n" + strResponse);
+
+            try
+            {
+                var jsonResponse = JsonNode.Parse(strResponse);
+                Errors = jsonResponse?["errors"] ?? new JsonObject();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+    }
+}

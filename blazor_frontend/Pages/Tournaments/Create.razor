@@ -1,0 +1,83 @@
+﻿@page "/Championships/{id:int}/Tournaments/Create"
+@using System.Text.Json.Nodes
+@using blazor_frontend.Models
+@using static System.Net.WebRequestMethods
+@using System.Net.Http.Json
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<PageTitle>Tournament creation</PageTitle>
+
+<div class="row">
+    <div class="col-lg-8">
+        <h1 class="mb-5">New Tournament</h1>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Name</label>
+            <div class="col-md-8">
+                <input class="form-control" @bind="tournament.Name">
+                <span class="text-danger">@Errors["Name"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-md-4 col-form-label">Number of Rounds</label>
+            <div class="col-md-8">
+                <input type="number" class="form-control" @bind="tournament.Number_of_rounds">
+                <span class="text-danger">@Errors["Number_of_rounds"]?[0]</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4 col-md-4 d-grid">
+                <button class="btn btn-primary" @onclick="CreateTournament">Submit</button>
+            </div>
+            <div class="col-md-4 d-grid">
+                <a class="btn btn-secondary" href="/Championships/@id/Tournaments">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+    public TournamentDto tournament = new TournamentDto();
+    public JsonNode Errors = new JsonObject();
+
+    protected async Task CreateTournament()
+    {
+        tournament.ChampionshipId = id;
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "access_token");
+        string tokenVal = TokenHelper.ConvertToken(token);
+
+        var request = new HttpRequestMessage(HttpMethod.Post, $"https://walrus-app-irwkx.ondigitalocean.app/Championships/{id}/Tournaments")
+            {
+                Content = JsonContent.Create(tournament)
+            };
+
+        request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", tokenVal);
+
+        var response = await Http.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo($"/Championships/{id}/Tournaments");
+        }
+        else
+        {
+            var strResponse = await response.Content.ReadAsStringAsync();
+            Console.WriteLine("Json response: \n" + strResponse);
+
+            try
+            {
+                var jsonResponse = JsonNode.Parse(strResponse);
+                Errors = jsonResponse?["errors"] ?? new JsonObject();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+    }
+}
